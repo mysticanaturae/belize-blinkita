@@ -28,16 +28,101 @@ footer{background:#061f23;color:#d2ddd6;padding:35px 0;font-size:.72rem}.footer-
 @media(max-width:600px){.wrap{width:calc(100% - 30px)}.brand{font-size:.85rem}.hero{min-height:610px}.hero h1{font-size:clamp(3rem,15vw,4.7rem)}.hero-actions{flex-direction:column;align-items:stretch;max-width:310px}.benefit-grid{grid-template-columns:1fr}.benefit img{height:220px}.path-grid{grid-template-columns:1fr}.path-step,.path-step+.path-step,.path-step:nth-child(3){padding:22px 0;border-left:0;border-top:1px solid var(--line)}.path-step:first-child{border-top:0}.bridge-card{min-height:350px}.catalogue-photo{min-height:350px}.live-photo{height:300px}.footer-inner{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 </style>
+<style id="blinkita-shared-header-date-widget">
+.site-header{position:sticky!important;top:0!important;z-index:1500!important;isolation:isolate;background:rgba(255,253,248,.97)!important;backdrop-filter:blur(14px);border-bottom:1px solid var(--line)!important}
+.site-header-wrap{width:100%!important;max-width:none!important;margin:0!important;padding:0!important}
+.site-header .header-inner{position:relative!important;display:flex!important;align-items:center!important;justify-content:space-between!important;flex-wrap:nowrap!important;gap:12px!important;width:min(1180px,calc(100% - 32px))!important;height:78px!important;min-height:78px!important;margin:0 auto!important;padding:0!important}
+.site-header .brand{display:inline-flex!important;align-items:center!important;flex:0 0 auto!important;margin:0!important;white-space:nowrap!important}
+.site-header .menu{display:inline-flex!important;align-items:center!important;justify-content:center!important;order:1!important;flex:0 0 auto!important;min-width:76px!important;min-height:42px!important;margin-left:auto!important;padding:9px 13px!important;border:1px solid rgba(194,160,91,.65)!important;background:var(--paper)!important;color:var(--ink)!important;font-size:.62rem!important;letter-spacing:.13em!important;text-transform:uppercase!important;cursor:pointer!important}
+.site-header .language-switch{display:flex!important;align-items:center!important;justify-content:center!important;order:2!important;flex:0 0 auto!important;gap:7px!important;margin:0 2px!important;font-size:.65rem!important;letter-spacing:.12em!important}
+.site-header .language-switch strong{color:var(--gold)!important}
+.site-header .tz-widget{display:flex!important;order:3!important;flex:0 0 92px!important;align-items:center!important;justify-content:center!important;flex-direction:column!important;width:92px!important;min-width:92px!important;min-height:68px!important;margin:0!important;padding:6px!important;border:1px solid rgba(194,160,91,.65)!important;border-radius:2px!important;background:var(--paper)!important;color:var(--ink)!important;cursor:pointer!important;text-align:center!important}
+.tz-widget-date{display:block;font-size:.52rem;line-height:1.2;color:var(--muted);white-space:nowrap;margin-bottom:5px}
+.tz-widget-symbols{display:flex;justify-content:center;align-items:center;gap:6px}
+.tz-widget .tz-number,.tz-widget .tz-glyph{display:flex;width:28px;height:28px;flex:0 0 28px;align-items:center;justify-content:center}
+.tz-widget .tz-number img{width:78%;height:78%;object-fit:contain}
+.tz-widget .tz-glyph img{width:100%;height:100%;object-fit:contain}
+.tz-widget-action{display:block;margin-top:5px;color:#927740;font-size:.47rem;font-weight:700;letter-spacing:.11em;white-space:nowrap}
+.site-header #mainNav{display:none!important;position:absolute!important;top:100%!important;left:auto!important;right:0!important;z-index:1600!important;width:min(380px,calc(100vw - 32px))!important;max-height:calc(100vh - 100px)!important;overflow:auto!important;padding:18px!important;background:var(--paper)!important;border:1px solid var(--line)!important;box-shadow:0 18px 48px rgba(8,40,45,.16)!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;white-space:normal!important}
+.site-header #mainNav.open{display:flex!important}
+.site-header #mainNav a{display:block!important;padding:13px 10px!important;border-bottom:1px solid var(--line)!important;font-size:.68rem!important;letter-spacing:.08em!important;text-transform:uppercase!important}
+.site-header #mainNav a:last-child{border-bottom:0!important}
+.site-header #mainNav .nav-cta{margin-top:12px!important;padding:13px 16px!important;border:1px solid var(--gold)!important;text-align:center!important;justify-content:center!important}
+.hero{position:relative;z-index:0}
+.tz-modal-backdrop{position:fixed;inset:0;z-index:3000;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(3,23,26,.68)}
+.tz-modal-backdrop.open{display:flex}
+.tz-modal{position:relative;width:min(560px,100%);max-height:min(90vh,760px);overflow:auto;overscroll-behavior:contain;padding:clamp(24px,5vw,42px);background:var(--paper);color:var(--ink);box-shadow:0 28px 90px rgba(0,0,0,.28)}
+.tz-close{position:absolute;top:14px;right:14px;width:36px;height:36px;border:1px solid var(--line);background:transparent;color:var(--ink);font-size:1.35rem;cursor:pointer}
+.tz-modal h2{font:400 clamp(2rem,5vw,3rem)/1.08 var(--serif);margin:13px 38px 8px 0}
+.tz-modal-intro,.tz-modal-date{color:var(--muted);font-size:.86rem}
+.tz-date-controls{display:grid;grid-template-columns:40px minmax(0,1fr) 40px auto;gap:7px;margin:20px 0;padding:14px;background:var(--sand);border:1px solid var(--line)}
+.tz-date-step,.tz-date-today{height:42px;border:1px solid rgba(18,56,59,.2);background:var(--paper);color:var(--ink);cursor:pointer}
+#tzDatePicker{min-width:0;width:100%;height:42px;padding:0 9px;border:1px solid rgba(18,56,59,.2);background:var(--paper);color:var(--ink);font:13px var(--sans);color-scheme:light}
+.tz-date-today{padding:0 12px;font-size:.58rem;letter-spacing:.1em}
+.tz-modal-energy{display:flex;align-items:center;gap:20px;padding:20px 0}
+.tz-modal-art{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.tz-modal-art .tz-number,.tz-modal-art .tz-glyph{display:flex;width:54px;height:54px;align-items:center;justify-content:center}
+.tz-modal-art .tz-number img{width:78%;height:78%;object-fit:contain}
+.tz-modal-art .tz-glyph img{width:100%;height:100%;object-fit:contain}
+.tz-modal-kicker{font-size:.57rem;font-weight:700;letter-spacing:.16em;color:#987b43}
+.tz-modal-name{font:1.7rem var(--serif);margin-top:4px}
+.tz-modal-copy{margin:18px 0 14px;color:var(--muted);font-size:.9rem;line-height:1.8}
+.tz-reflection{margin:20px 0;padding:3px 0 3px 17px;border-left:2px solid var(--gold);font:1.2rem/1.5 var(--serif);color:var(--ink)}
+.tz-notes-label{display:block;margin:22px 0 8px;font-size:.62rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--ink)}
+.tz-notes{display:block;width:100%;min-height:104px;resize:vertical;padding:13px 14px;border:1px solid var(--line);background:#fffefb;color:var(--ink);font:.85rem/1.6 var(--sans)}
+.tz-save-row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:11px}
+.tz-save-status{font-size:.72rem;line-height:1.5;color:var(--muted)}
+.tz-save{min-height:40px;padding:10px 17px;border:0;background:var(--ink);color:#fff;font-size:.62rem;font-weight:700;letter-spacing:.13em;cursor:pointer}
+.tz-save-row{align-items:stretch;flex-direction:column}
+.tz-save{width:100%}
+.tz-modal-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.tz-modal-link{display:inline-block;padding-bottom:4px;border-bottom:1px solid var(--gold);font-size:.65rem;letter-spacing:.09em;text-transform:uppercase}
+.tz-modal-journey{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:44px;padding:11px 17px;background:var(--gold);color:var(--paper);font-size:.63rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+.tz-sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:760px){.site-header .header-inner{width:calc(100% - 24px)!important;height:70px!important;min-height:70px!important;gap:7px!important}.site-header .brand{font-size:.8rem!important;letter-spacing:.1em!important}.site-header .menu{min-width:62px!important;padding:8px 8px!important}.site-header .tz-widget{flex-basis:76px!important;width:76px!important;min-width:76px!important;min-height:62px!important;padding:5px!important}.tz-widget-date{font-size:.45rem}.tz-widget .tz-number,.tz-widget .tz-glyph{width:21px;height:21px;flex-basis:21px}.tz-widget-action{font-size:.4rem}.site-header #mainNav{right:0!important}.tz-date-controls{grid-template-columns:36px minmax(0,1fr) 36px;gap:5px}.tz-date-today{grid-column:1/-1;height:36px}.tz-modal-energy{align-items:flex-start;gap:12px}.tz-modal-art .tz-number,.tz-modal-art .tz-glyph{width:43px;height:43px}.tz-modal-actions{align-items:stretch;flex-direction:column}.tz-modal-journey{width:100%}}
+</style>
 </head>
 <body>
 <header class="site-header"><div class="wrap header-inner">
-<a class="brand" href="/sl/index.html" aria-label="BLINKITA domov"><span>BLINKITA</span></a>
+<a class="brand" href="/sl/index.html" aria-label="BLINKITA home"><span>BLINKITA</span></a>
 <button class="menu" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav">MENI ☰</button>
-<nav class="nav" id="mainNav" aria-label="Glavna navigacija">
-<a href="/sl/index.html#discover">Razišči</a><a href="#online-experiences">Spletno</a><a href="/sl/index.html#belize">Belize</a><a href="/sl/travel.html">Potovanja</a><a href="/sl/index.html#about">O BLINKITA</a><a href="/sl/my-blinkita.html">MOJA BLINKITA</a><a class="nav-cta" href="#contact">Začni tukaj</a>
-</nav>
-<div class="language-switch" aria-label="Izbira jezika"><a href="/index.html">EN</a><span>·</span><strong>SL</strong></div>
+<nav class="nav" id="mainNav" aria-label="Glavna navigacija"><a href="/sl/index.html#discover">Razišči</a><a href="/sl/online.html">Spletne izkušnje</a><a href="/sl/personal-guidance.html">Osebno vodenje</a><a href="/sl/maya-time-astrology.html">Majevski čas</a><a href="/sl/wellness.html">Dobro počutje</a><a href="/sl/belize-life.html">Belize</a><a href="/sl/stay.html">Nastanitev</a><a href="/sl/about.html">O BLINKITA</a><a class="nav-cta" href="/sl/index.html#begin">Začni svoje potovanje</a></nav>
+<div class="language-switch" aria-label="Izbira jezika"><a href="/belize-life.html" lang="en">EN</a><span>·</span><strong aria-current="page">SL</strong></div>
+<button class="tz-widget" id="tzWidget" type="button" aria-label="Odpri tradicionalni majevski koledar Tzolk'in in izberi datum">
+<span class="tz-widget-date" id="tzDate">Danes</span>
+<span class="tz-widget-symbols"><span class="tz-number"><img id="tzNumberImage" src="/assets/tzolkin/tone-1.png" alt=""></span><span class="tz-glyph"><img id="tzGlyphImage" src="/assets/tzolkin/imix.png" alt=""></span></span>
+<span class="tz-widget-action">IZBERI DATUM</span>
+</button>
 </div></header>
+<div class="tz-modal-backdrop" id="tzBackdrop" role="dialog" aria-modal="true" aria-labelledby="tzModalTitle">
+  <section class="tz-modal">
+    <button class="tz-close" id="tzClose" type="button" aria-label="Zapri koledar">×</button>
+    <div class="eyebrow">BLINKITA · ŽIVI ČAS</div>
+    <h2 id="tzModalTitle">Razišči Tzolk'in</h2>
+    <p class="tz-modal-intro">Izberi datum in razišči njegovo mesto v tradicionalnem 260-dnevnem majevskem koledarju.</p>
+    <div class="tz-modal-date" id="tzModalDate" aria-live="polite"></div>
+    <div class="tz-date-controls">
+      <button class="tz-date-step" id="tzPreviousDate" type="button" aria-label="Prejšnji dan">‹</button>
+      <label class="tz-sr-only" for="tzDatePicker">Izberi datum</label>
+      <input id="tzDatePicker" type="date" aria-label="Izberi datum">
+      <button class="tz-date-step" id="tzNextDate" type="button" aria-label="Naslednji dan">›</button>
+      <button class="tz-date-today" id="tzTodayDate" type="button">DANES</button>
+    </div>
+    <div class="tz-modal-energy">
+      <span class="tz-modal-art"><span class="tz-number"><img id="tzModalNumberImage" src="/assets/tzolkin/tone-1.png" alt=""></span><span class="tz-glyph"><img id="tzModalGlyphImage" src="/assets/tzolkin/imix.png" alt=""></span></span>
+      <div><div class="tz-modal-kicker" id="tzEnergyLabel">TVOJ ŽIVI ČAS</div><div class="tz-modal-name" id="tzModalDayName">1 Imox</div></div>
+    </div>
+    <p class="tz-modal-copy" id="tzModalCopy">Naj ti ritem tega dne podari trenutek za premor, da začutiš, kaj se premika v tvojem življenju, in izbereš, kako želiš stopiti naproti izkušnji, ki prihaja.</p>
+    <div class="tz-reflection" id="tzReflection">Čemu želiš danes nameniti svojo pozornost?</div>
+    <label class="tz-notes-label" for="tzNotes">Zapis za tvoje potovanje skozi Živi čas</label>
+    <textarea class="tz-notes" id="tzNotes" rows="4" placeholder="Zapiši misel, namero, občutek ali nekaj, kar si želiš zapomniti ..."></textarea>
+    <div class="tz-save-row"><span class="tz-save-status" id="tzSaveStatus">Tvoj zapis ostane shranjen v tem brskalniku.</span><button class="tz-save" id="tzSave" type="button">SHRANI ZAPIS</button></div>
+    <div class="tz-modal-actions">
+      <a class="tz-modal-link" href="sl/maya-time-astrology.html">Razišči majevski čas in Živi čas</a>
+      <a class="tz-modal-journey" href="sl/plan-your-journey.html">NAČRTUJ POTOVANJE <span aria-hidden="true">↗</span></a>
+    </div>
+  </section>
+</div>
 <main>
 <section class="hero"><div class="wrap hero-content">
 <div class="eyebrow">BLINKITA · Osebne izkušnje na daljavo</div>
@@ -118,5 +203,63 @@ mainNav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{m
 document.addEventListener('click',event=>{if(!mainNav.contains(event.target)&&!menuButton.contains(event.target)){mainNav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}});
 document.addEventListener('keydown',event=>{if(event.key==='Escape'){mainNav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}});
 </script>
+<script id="blinkita-living-time-widget">
+(()=> {
+ const $=id=>document.getElementById(id);
+ const widget=$('tzWidget'),backdrop=$('tzBackdrop'),close=$('tzClose');
+ if(!widget||!backdrop||!close)return;
+ const signs=["Imox","Iq","Aq'ab'al","K'at","Kan","Kame","Kej","Q'anil","Toj","Tz'i","B'atz","E","Aj","I'x","Tz'ikin","Ajmaq","Noj","Tijax","Kawoq","Ajpu"];
+ const glyphs=["imix","ik","akbal","kan","chicchan","cimi","manik","lamat","muluc","oc","chuen","eb","ben","ix","men","cib","caban","etznab","cauac","ahau"];
+ const reflections={"Imox":"Začni z radovednostjo. Opazuj, kaj se skriva pod površjem, prisluhni intuiciji in pusti prostor nepričakovanemu odkritju.","Iq":"Opazuj, kaj se pretaka skozi dan: vetrič, nova zamisel ali pogovor. Preden izbereš naslednji korak, se za trenutek ustavi in vdihni.","Aq'ab'al":"Pozdravi vmesne trenutke in možnost novega začetka. Svež pogled se včasih pojavi povsem tiho.","K'at":"Zberi tisto, kar je pomembno. Izberi doživetje, pogovor ali namero, ki jo želiš ponesti s seboj.","Kan":"Sledi svoji radovednosti in ostani pozoren/-na. Dovoli svetu, da te povabi k odkrivanju, obenem pa si vzemi čas, da začutiš, kaj ti zares nekaj pomeni.","Kame":"Ustvari prostor za tisto, kar si pripravljen/-a odložiti. Miren premor lahko pomaga, da se eno poglavje zaključi in drugo začne.","Kej":"Dovoli naravi, da določi ritem. Opazuj drevesa, obalo in tla pod svojimi stopali.","Q'anil":"Opazuj, kaj raste. Tudi drobni trenutki postanejo pomembni, ko jim nameniš svojo pozornost.","Toj":"Ustavi se in ceni, kar ti je bilo danes podarjeno: čas, skrb, prijaznost ali čudovit razgled.","Tz'i":"Izberi eno stvar, ki ji boš namenil/-a vso svojo pozornost. Povezanost, ki nekaj pomeni, raste iz prisotnosti, zaupanja in poslušanja.","B'atz":"Tvoj dan je nit v širši zgodbi. Nekaj zapiši, ustvari ali deli trenutek, ki ga doživljaš kot svojega.","E":"Dovoli, da se potovanje odvija korak za korakom. Ni ti treba vsega stlačiti v en sam dan.","Aj":"Opazuj, kaj ti pomaga ostati prizemljen/-a, čutiti podporo in jasno izbirati svojo pot.","I'x":"Poišči tišino v naravi. Naj te mirna moč gozda, morja ali večerne svetlobe znova poveže s seboj.","Tz'ikin":"Poglej onkraj znanega razgleda. Kateri nov pogled ali majhna pustolovščina bi lahko ostala s teboj?","Ajmaq":"Naredi prostor za sočutje, tudi do sebe. Nežen trenutek razmisleka lahko spremeni ves potek dneva.","Noj":"Daj eni misli prostor, da se razjasni. Dnevnik ali tih premor ti lahko pomaga prisluhniti temu, kar je pomembno.","Tijax":"Izberi tisto, kar vrača jasnost. Poenostavi eno stvar in naredi več prostora za tisto, kar ti je pomembno.","Kawoq":"Pomembno potovanje oblikujejo ljudje in kraji, ki te sprejmejo. Opazuj, ob čem se počutiš dobrodošlo, obnovljeno in povezano.","Ajpu":"Naj dan nosi pogum in radost. Izberi doživetje, ki te spomni, zakaj si ustvaril/-a prostor za to potovanje."};
+ const questions={"Imox":"Kaj lahko odkriješ, če pustiš nekaj prostora nepričakovanemu?","Iq":"Kaj želiš vdihniti in kaj si pripravljen/-a izpustiti?","Aq'ab'al":"Kateri nov začetek morda čaka v tihem trenutku?","K'at":"Kaj je vredno zbrati, ohraniti ali čemur nameniti pozornost?","Kan":"Kaj prebuja tvojo radovednost in kako lahko to raziskuješ s pozornostjo?","Kame":"Kaj si pripravljen/-a pustiti za seboj, da ustvariš prostor za naslednje?","Kej":"Kje ti lahko narava pomaga upočasniti in se prizemljiti?","Q'anil":"Kaj v tvojem življenju raste in si zasluži tvojo pozornost?","Toj":"Kateri del današnjega dne želiš ceniti, preden mine?","Tz'i":"Kdo ali kaj si danes zasluži tvojo polno pozornost?","B'atz":"Kateri majhen trenutek želiš vtkati v svojo zgodbo?","E":"Kaj bi se spremenilo, če bi se osredotočil/-a samo na naslednji korak?","Aj":"Kaj ti trenutno daje občutek podpore in prizemljenosti?","I'x":"Kje lahko v naravi najdeš nekaj tišine?","Tz'ikin":"Kakšen nov pogled želiš ponesti s seboj?","Ajmaq":"Kje lahko do sebe pokažeš malo več sočutja?","Noj":"Katera misel potrebuje miren trenutek, da postane jasnejša?","Tijax":"Kaj lahko poenostaviš, da narediš več prostora za tisto, kar je pomembno?","Kawoq":"Kaj bi današnji dan naredilo bolj hranilen, povezan ali nepozaben?","Ajpu":"Katero doživetje bi ti pomagalo, da se počutiš bolj živ/-a?"};
+ const months=['januar','februar','marec','april','maj','junij','julij','avgust','september','oktober','november','december'];
+ const shortMonths=['jan','feb','mar','apr','maj','jun','jul','avg','sep','okt','nov','dec'];
+ const today=new Date();today.setHours(12,0,0,0);let selected=new Date(today);
+ function tzData(date){
+  const y=date.getFullYear(),m=date.getMonth()+1,a=Math.floor((14-m)/12),yy=y+4800-a,mm=m+12*a-3;
+  const jdn=date.getDate()+Math.floor((153*mm+2)/5)+365*yy+Math.floor(yy/4)-Math.floor(yy/100)+Math.floor(yy/400)-32045;
+  const elapsed=jdn-584283;
+  return {number:((elapsed+3)%13+13)%13+1,sign:((elapsed+19)%20+20)%20};
+ }
+ function render(date){
+  selected=new Date(date);selected.setHours(12,0,0,0);
+  const data=tzData(selected),y=selected.getFullYear(),m=selected.getMonth(),day=selected.getDate();
+  const name=data.number+' '+signs[data.sign],numberSrc='/assets/tzolkin/tone-'+data.number+'.png',glyphSrc='/assets/tzolkin/'+glyphs[data.sign]+'.png';
+  $('tzDate').textContent=day+' '+shortMonths[m]+' '+y;
+  $('tzNumberImage').src=numberSrc;$('tzGlyphImage').src=glyphSrc;
+  $('tzModalTitle').textContent=name;$('tzModalDayName').textContent=name;
+  $('tzModalDate').textContent=['nedelja','ponedeljek','torek','sreda','četrtek','petek','sobota'][selected.getDay()]+', '+day+'. '+months[m]+' '+y;
+  $('tzModalNumberImage').src=numberSrc;$('tzModalGlyphImage').src=glyphSrc;
+  $('tzDatePicker').value=String(y).padStart(4,'0')+'-'+String(m+1).padStart(2,'0')+'-'+String(day).padStart(2,'0');
+  const sign=signs[data.sign],same=day===today.getDate()&&m===today.getMonth()&&y===today.getFullYear();
+  $('tzEnergyLabel').textContent=same?"TVOJ ŽIVI ČAS":"ŽIVI ČAS ZA IZBRANI DATUM";
+  $('tzModalCopy').textContent=reflections[sign]||reflections.Kawoq;
+  $('tzReflection').textContent=questions[sign]||questions.Kawoq;
+  $('tzSaveStatus').textContent="Tvoj zapis ostane shranjen v tem brskalniku.";
+
+ }
+ function open(){backdrop.classList.add('open');document.body.style.overflow='hidden';close.focus()}
+ function shut(){backdrop.classList.remove('open');document.body.style.overflow='';widget.focus()}
+ widget.addEventListener('click',open);close.addEventListener('click',shut);
+ backdrop.addEventListener('click',event=>{if(event.target===backdrop)shut()});
+ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&backdrop.classList.contains('open'))shut()});
+ $('tzDatePicker').addEventListener('change',event=>{
+  if(!event.target.value)return;const [y,m,d]=event.target.value.split('-').map(Number),next=new Date(0);
+  next.setFullYear(y,m-1,d);next.setHours(12,0,0,0);
+  if(next.getFullYear()===y&&next.getMonth()===m-1&&next.getDate()===d)render(next);
+ });
+ $('tzPreviousDate').addEventListener('click',()=>{const next=new Date(selected);next.setDate(next.getDate()-1);render(next)});
+ $('tzNextDate').addEventListener('click',()=>{const next=new Date(selected);next.setDate(next.getDate()+1);render(next)});
+ $('tzTodayDate').addEventListener('click',()=>render(today));
+ const note=$('tzNotes'),save=$('tzSave'),status=$('tzSaveStatus'),storeKey='blinkitaLivingTimeNotes_v1';
+ save.addEventListener('click',()=>{
+  const value=note.value.trim();if(!value){status.textContent="Pred shranjevanjem zapiši misel ali namero.";note.focus();return;}
+  try{const entries=JSON.parse(localStorage.getItem(storeKey)||'[]');entries.push({date:$('tzModalDate').textContent,calendar:$('tzModalDayName').textContent,note:value,createdAt:new Date().toISOString()});localStorage.setItem(storeKey,JSON.stringify(entries));note.value='';status.textContent="Shranjeno v tej napravi za tvoje potovanje skozi Živi čas.";}
+  catch(error){status.textContent="Ta brskalnik zapisa ni mogel shraniti. Preveri nastavitve shranjevanja.";}
+ });
+ render(today);
+})();
+</script>
+<script id="blinkita-menu">(()=>{const button=document.getElementById('menuButton'),nav=document.getElementById('mainNav');if(!button||!nav)return;const close=()=>{nav.classList.remove('open');button.setAttribute('aria-expanded','false')};button.addEventListener('click',()=>{const open=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!button.contains(e.target))close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()})})();</script>
 </body>
 </html>
