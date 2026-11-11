@@ -1,0 +1,17 @@
+{
+  "name": "BLINKITA — The Living Portal",
+  "short_name": "BLINKITA",
+  "description": "A living portal for personal journeys, traditional Maya time, wellbeing and meaningful experiences.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fffdf8",
+  "theme_color": "#12383b",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
