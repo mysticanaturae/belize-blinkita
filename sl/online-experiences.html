@@ -57,7 +57,7 @@
 <a class="brand" href="/sl/index.html" aria-label="BLINKITA home"><span>BLINKITA</span></a>
 <button class="menu" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav">MENI ☰</button>
 <nav class="nav" id="mainNav" aria-label="Glavna navigacija"><a href="/sl/index.html#discover">Razišči</a><a href="/sl/online.html">Spletne izkušnje</a><a href="/sl/personal-guidance.html">Osebno vodenje</a><a href="/sl/maya-time-astrology.html">Majevski čas</a><a href="/sl/wellness.html">Dobro počutje</a><a href="/sl/belize-life.html">Belize</a><a href="/sl/stay.html">Nastanitev</a><a href="/sl/about.html">O BLINKITA</a><a class="nav-cta" href="/sl/index.html#begin">Začni svoje potovanje</a></nav>
-<div class="language-switch" aria-label="Izbira jezika"><a href="/belize-life.html" lang="en">EN</a><span>·</span><strong aria-current="page">SL</strong></div>
+<div class="language-switch" aria-label="Izbira jezika"><a href="/online-experiences.html" lang="en">EN</a><span>·</span><strong aria-current="page">SL</strong></div>
 <button class="tz-widget" id="tzWidget" type="button" aria-label="Odpri tradicionalni majevski koledar Tzolk'in in izberi datum">
 <span class="tz-widget-date" id="tzDate">Danes</span>
 <span class="tz-widget-symbols"><span class="tz-number"><img id="tzNumberImage" src="/assets/tzolkin/tone-1.png" alt=""></span><span class="tz-glyph"><img id="tzGlyphImage" src="/assets/tzolkin/imix.png" alt=""></span></span>
@@ -149,5 +149,5 @@
  render(today);
 })();
 </script>
-<script id="blinkita-menu">(()=>{const button=document.getElementById('menuButton'),nav=document.getElementById('mainNav');if(!button||!nav)return;const close=()=>{nav.classList.remove('open');button.setAttribute('aria-expanded','false')};button.addEventListener('click',()=>{const open=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!button.contains(e.target))close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()})})();</script>
+
 </body></html>

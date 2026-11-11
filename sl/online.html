@@ -87,7 +87,7 @@ footer{background:#061f23;color:#d2ddd6;padding:35px 0;font-size:.72rem}.footer-
 <a class="brand" href="/sl/index.html" aria-label="BLINKITA home"><span>BLINKITA</span></a>
 <button class="menu" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav">MENI ☰</button>
 <nav class="nav" id="mainNav" aria-label="Glavna navigacija"><a href="/sl/index.html#discover">Razišči</a><a href="/sl/online.html">Spletne izkušnje</a><a href="/sl/personal-guidance.html">Osebno vodenje</a><a href="/sl/maya-time-astrology.html">Majevski čas</a><a href="/sl/wellness.html">Dobro počutje</a><a href="/sl/belize-life.html">Belize</a><a href="/sl/stay.html">Nastanitev</a><a href="/sl/about.html">O BLINKITA</a><a class="nav-cta" href="/sl/index.html#begin">Začni svoje potovanje</a></nav>
-<div class="language-switch" aria-label="Izbira jezika"><a href="/belize-life.html" lang="en">EN</a><span>·</span><strong aria-current="page">SL</strong></div>
+<div class="language-switch" aria-label="Izbira jezika"><a href="/online.html" lang="en">EN</a><span>·</span><strong aria-current="page">SL</strong></div>
 <button class="tz-widget" id="tzWidget" type="button" aria-label="Odpri tradicionalni majevski koledar Tzolk'in in izberi datum">
 <span class="tz-widget-date" id="tzDate">Danes</span>
 <span class="tz-widget-symbols"><span class="tz-number"><img id="tzNumberImage" src="/assets/tzolkin/tone-1.png" alt=""></span><span class="tz-glyph"><img id="tzGlyphImage" src="/assets/tzolkin/imix.png" alt=""></span></span>
@@ -195,14 +195,7 @@ footer{background:#061f23;color:#d2ddd6;padding:35px 0;font-size:.72rem}.footer-
 <section class="closing" id="contact"><div class="wrap"><div class="eyebrow">Ni ti treba vedeti vsega vnaprej</div><h2>Povej mi, kje si zdaj. Skupaj lahko poiščeva prvo pravo izhodišče.</h2><p>Napiši mi, kaj te zanima, kaj trenutno raziskuješ ali katero izkušnjo si želiš doživeti. Pojasnila ti bom, katere možnosti so na voljo online in katere zahtevajo srečanje v živo.</p><div class="closing-actions"><a class="btn gold" href="mailto:info@blinkita.si?subject=BLINKITA%20Online%20%E2%80%94%20Moje%20prvo%20sre%C4%8Danje">Pošlji povpraševanje</a><a class="btn dark" href="https://wa.me/5016084121" target="_blank" rel="noopener noreferrer">Piši Blanki na WhatsApp</a><a class="btn" href="/sl/index.html">Nazaj na BLINKITA</a></div></div></section>
 </main>
 <footer><div class="wrap footer-inner"><div><div class="footer-brand">BLINKITA</div><div class="footer-note">BODY · MIND · TIME · LIFE · CIRCLE</div></div><div class="footer-links"><a href="mailto:info@blinkita.si">info@blinkita.si</a><a href="https://blinkita.si">blinkita.si</a><a href="https://blinkita.com">blinkita.com</a><a href="https://wa.me/5016084121">WhatsApp</a></div><div class="footer-note">Spletno po vsem svetu · Osebne izkušnje v Belizeju</div></div></footer>
-<script>
-const menuButton=document.getElementById('menuButton');
-const mainNav=document.getElementById('mainNav');
-menuButton.addEventListener('click',()=>{const open=mainNav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});
-mainNav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{mainNav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));
-document.addEventListener('click',event=>{if(!mainNav.contains(event.target)&&!menuButton.contains(event.target)){mainNav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}});
-document.addEventListener('keydown',event=>{if(event.key==='Escape'){mainNav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}});
-</script>
+
 <script id="blinkita-living-time-widget">
 (()=> {
  const $=id=>document.getElementById(id);
@@ -260,6 +253,6 @@ document.addEventListener('keydown',event=>{if(event.key==='Escape'){mainNav.cla
  render(today);
 })();
 </script>
-<script id="blinkita-menu">(()=>{const button=document.getElementById('menuButton'),nav=document.getElementById('mainNav');if(!button||!nav)return;const close=()=>{nav.classList.remove('open');button.setAttribute('aria-expanded','false')};button.addEventListener('click',()=>{const open=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!button.contains(e.target))close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()})})();</script>
+
 </body>
 </html>

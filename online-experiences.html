@@ -57,7 +57,7 @@
 <a class="brand" href="/index.html" aria-label="BLINKITA home"><span>BLINKITA</span></a>
 <button class="menu" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav">MENU ☰</button>
 <nav class="nav" id="mainNav" aria-label="Main navigation"><a href="/index.html#discover">Explore</a><a href="/online.html">Online experiences</a><a href="/personal-guidance.html">Personal guidance</a><a href="/maya-time-astrology.html">Maya Time</a><a href="/wellness.html">Wellness</a><a href="/belize-life.html">Belize</a><a href="/stay.html">Stay</a><a href="/about.html">About BLINKITA</a><a class="nav-cta" href="/index.html#begin">Begin your journey</a></nav>
-<div class="language-switch" aria-label="Choose language"><strong aria-current="page">EN</strong><span>·</span><a href="/sl/belize-life.html" lang="sl">SL</a></div>
+<div class="language-switch" aria-label="Choose language"><strong aria-current="page">EN</strong><span>·</span><a href="/sl/online-experiences.html" lang="sl">SL</a></div>
 <button class="tz-widget" id="tzWidget" type="button" aria-label="Open the traditional Maya Tzolk'in calendar and plan a date">
 <span class="tz-widget-date" id="tzDate">Today</span>
 <span class="tz-widget-symbols"><span class="tz-number"><img id="tzNumberImage" src="/assets/tzolkin/tone-1.png" alt=""></span><span class="tz-glyph"><img id="tzGlyphImage" src="/assets/tzolkin/imix.png" alt=""></span></span>
@@ -149,5 +149,5 @@
  render(today);
 })();
 </script>
-<script id="blinkita-menu">(()=>{const button=document.getElementById('menuButton'),nav=document.getElementById('mainNav');if(!button||!nav)return;const close=()=>{nav.classList.remove('open');button.setAttribute('aria-expanded','false')};button.addEventListener('click',()=>{const open=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));document.addEventListener('click',e=>{if(!nav.contains(e.target)&&!button.contains(e.target))close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()})})();</script>
+
 </body></html>
