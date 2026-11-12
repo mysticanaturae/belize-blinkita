@@ -313,36 +313,39 @@ header.green-shared-header .menu{display:none!important}
 </style>
 
 <style id="wellness-header-flex-final">
-/* Three fixed visual zones: brand left, navigation at viewport centre, controls right. */
-header.green-shared-header{display:block!important;position:sticky!important;top:0!important;left:auto!important;right:auto!important;transform:none!important;width:100%!important;min-height:0!important;padding:0!important;background:#123d37!important;z-index:1500!important;box-sizing:border-box!important}
-header.green-shared-header>.header-inner{position:relative!important;display:flex!important;flex-flow:row nowrap!important;align-items:center!important;justify-content:flex-start!important;gap:0!important;width:100%!important;max-width:none!important;min-height:78px!important;margin:0!important;padding:9px clamp(22px,3vw,44px)!important;box-sizing:border-box!important}
-header.green-shared-header .brand{display:flex!important;flex:0 0 auto!important;align-items:center!important;min-width:max-content!important;margin:0!important}
-header.green-shared-header .brand .seiri-brand-name{white-space:nowrap!important}
-header.green-shared-header nav#mainNav{position:absolute!important;left:50%!important;top:50%!important;transform:translate(-50%,-50%)!important;display:flex!important;flex-flow:row nowrap!important;align-items:center!important;justify-content:center!important;gap:clamp(9px,1vw,16px)!important;width:max-content!important;max-width:calc(100% - 430px)!important;min-width:0!important;margin:0!important;padding:0!important;overflow-x:auto!important;overflow-y:hidden!important;scrollbar-width:none!important;white-space:nowrap!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;font-size:clamp(.56rem,.68vw,.72rem)!important;letter-spacing:.025em!important}
-header.green-shared-header nav#mainNav::-webkit-scrollbar{display:none!important}
-header.green-shared-header nav#mainNav a{display:inline-flex!important;flex:0 0 auto!important;align-items:center!important;padding:8px 0!important;white-space:nowrap!important;border:0!important;background:transparent!important}
-header.green-shared-header nav#mainNav .nav-cta{padding:9px 10px!important}
-header.green-shared-header .menu{display:none!important}
-header.green-shared-header .language-switch{display:flex!important;flex:0 0 auto!important;align-items:center!important;gap:7px!important;margin:0 16px 0 auto!important;white-space:nowrap!important}
-header.green-shared-header #tzWidget{display:flex!important;position:static!important;flex:0 0 118px!important;width:118px!important;min-width:118px!important;max-width:118px!important;margin:0!important;padding:5px 7px!important;transform:none!important}
-@media(max-width:1100px){
- header.green-shared-header>.header-inner{min-height:76px!important;padding:8px 18px!important}
- header.green-shared-header .menu{display:inline-flex!important;flex:0 0 auto!important;align-items:center!important;justify-content:center!important;min-width:70px!important;min-height:40px!important;margin-left:22px!important}
- header.green-shared-header nav#mainNav{display:none!important;position:absolute!important;left:12px!important;right:12px!important;top:100%!important;transform:none!important;width:auto!important;max-width:none!important;max-height:calc(100vh - 100px)!important;overflow:auto!important;flex:none!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;gap:0!important;padding:12px 18px!important;background:#123d37!important;border:1px solid rgba(215,187,119,.42)!important;box-shadow:0 18px 38px rgba(0,0,0,.22)!important;white-space:normal!important;font-size:.72rem!important}
- header.green-shared-header nav#mainNav.open{display:flex!important}
- header.green-shared-header nav#mainNav a{display:flex!important;padding:12px 8px!important;border-bottom:1px solid rgba(255,255,255,.14)!important;white-space:normal!important}
- header.green-shared-header nav#mainNav .nav-cta{justify-content:center!important;margin-top:10px!important}
- header.green-shared-header .language-switch{margin-left:auto!important;margin-right:12px!important}
-}
-@media(max-width:520px){
- header.green-shared-header>.header-inner{gap:0!important;min-height:68px!important;padding:6px 9px!important}
- header.green-shared-header .brand .seiri-brand-name{font-size:.68rem!important;letter-spacing:.025em!important}
- header.green-shared-header .menu{min-width:56px!important;min-height:36px!important;margin-left:8px!important;padding:6px 5px!important;font-size:.55rem!important}
- header.green-shared-header .language-switch{gap:5px!important;margin-right:6px!important;font-size:10px!important}
- header.green-shared-header #tzWidget{flex:0 0 74px!important;width:74px!important;min-width:74px!important;max-width:74px!important;padding:3px!important}
- header.green-shared-header #tzWidget .tz-date{font-size:.42rem!important}
- header.green-shared-header #tzWidget .tz-number,header.green-shared-header #tzWidget .tz-glyph{width:20px!important;height:20px!important;min-width:20px!important;min-height:20px!important;flex-basis:20px!important}
- header.green-shared-header #tzWidget .tz-calendar-link{font-size:.34rem!important;letter-spacing:.02em!important}
+/* Match the homepage header: light bar, brand left, menu, language and date planner distributed across one row. */
+.site-header.green-shared-header{display:block!important;position:sticky!important;top:0!important;left:auto!important;right:auto!important;transform:none!important;width:100%!important;min-height:0!important;height:auto!important;padding:0!important;background:rgba(255,253,248,.98)!important;color:var(--ink)!important;z-index:1500!important;border-bottom:1px solid var(--line)!important;box-sizing:border-box!important}
+.site-header.green-shared-header>.wrap.header-inner{position:relative!important;display:flex!important;flex-flow:row nowrap!important;align-items:center!important;justify-content:space-between!important;gap:12px!important;width:calc(100% - 16px)!important;max-width:none!important;height:78px!important;min-height:78px!important;margin:0 auto!important;padding:0!important;box-sizing:border-box!important}
+.site-header.green-shared-header .brand{display:inline-flex!important;flex:0 1 auto!important;align-items:center!important;min-width:max-content!important;margin:0!important;color:var(--gold)!important;font:1rem var(--serif)!important;letter-spacing:.16em!important}
+.site-header.green-shared-header .brand .seiri-brand-name{font:inherit!important;letter-spacing:inherit!important;color:inherit!important}
+.site-header.green-shared-header .menu{display:inline-flex!important;flex:0 0 auto!important;align-items:center!important;justify-content:center!important;gap:10px!important;min-width:88px!important;min-height:42px!important;margin:0!important;padding:9px 14px!important;border:1px solid rgba(194,160,91,.65)!important;background:transparent!important;color:var(--ink)!important;font-size:.62rem!important;letter-spacing:.15em!important;text-transform:uppercase!important}
+.site-header.green-shared-header .nav{display:none!important;position:absolute!important;top:100%!important;left:auto!important;right:0!important;z-index:1501!important;width:min(360px,calc(100vw - 30px))!important;max-height:calc(100vh - 100px)!important;overflow:auto!important;padding:18px!important;background:var(--paper)!important;color:var(--ink)!important;border:1px solid var(--line)!important;box-shadow:0 18px 48px rgba(8,40,45,.14)!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;white-space:normal!important}
+.site-header.green-shared-header .nav.open{display:flex!important}
+.site-header.green-shared-header .nav a{display:block!important;padding:13px 10px!important;border-bottom:1px solid var(--line)!important;color:var(--ink)!important;white-space:normal!important}
+.site-header.green-shared-header .nav .nav-cta{margin-top:12px!important;text-align:center!important;justify-content:center!important;background:var(--gold)!important;color:#fffdf8!important}
+.site-header.green-shared-header .language-switch{display:flex!important;flex:0 0 auto!important;align-items:center!important;gap:8px!important;margin:0 0 0 auto!important;color:var(--ink)!important;font:600 11px var(--sans)!important;letter-spacing:.12em!important;white-space:nowrap!important}
+.site-header.green-shared-header .language-switch a{color:var(--ink)!important;opacity:.65!important}
+.site-header.green-shared-header .language-switch strong{color:var(--gold)!important}
+.site-header.green-shared-header #tzWidget{display:flex!important;position:relative!important;flex:0 0 92px!important;width:92px!important;min-width:92px!important;max-width:92px!important;min-height:68px!important;height:auto!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;gap:0!important;margin:0!important;padding:6px!important;border:1px solid rgba(194,160,91,.65)!important;border-radius:2px!important;background:var(--paper)!important;color:var(--ink)!important;transform:none!important;box-shadow:none!important}
+.site-header.green-shared-header #tzWidget .tz-top{display:block!important;margin:0!important}
+.site-header.green-shared-header #tzWidget .tz-date{display:block!important;margin:0 0 5px!important;font-size:.52rem!important;line-height:1.2!important;color:var(--muted)!important;white-space:nowrap!important}
+.site-header.green-shared-header #tzWidget .tz-symbols{display:flex!important;justify-content:center!important;align-items:center!important;gap:6px!important;margin:0!important}
+.site-header.green-shared-header #tzWidget .tz-number,.site-header.green-shared-header #tzWidget .tz-glyph{display:flex!important;width:28px!important;height:28px!important;flex:0 0 28px!important;align-items:center!important;justify-content:center!important}
+.site-header.green-shared-header #tzWidget .tz-number img{width:78%!important;height:78%!important;object-fit:contain!important}
+.site-header.green-shared-header #tzWidget .tz-glyph img{width:100%!important;height:100%!important;object-fit:contain!important}
+.site-header.green-shared-header #tzWidget .tz-widget-meta{display:block!important;margin:5px 0 0!important;text-align:center!important}
+.site-header.green-shared-header #tzWidget .tz-name{display:none!important}
+.site-header.green-shared-header #tzWidget .tz-calendar-link{display:block!important;margin:0!important;color:var(--gold)!important;font-size:.4rem!important;font-weight:700!important;letter-spacing:.1em!important;white-space:nowrap!important}
+.site-header.green-shared-header #tzWidget .tz-sub,.site-header.green-shared-header #tzWidget .tz-open{display:none!important}
+@media(max-width:1050px){.site-header.green-shared-header .nav{gap:8px!important;font-size:.57rem!important}.site-header.green-shared-header #tzWidget{flex-basis:92px!important;width:92px!important;min-width:92px!important}}
+@media(max-width:560px){
+ .site-header.green-shared-header>.wrap.header-inner{height:70px!important;min-height:70px!important;gap:7px!important;width:calc(100% - 18px)!important}
+ .site-header.green-shared-header .brand{font-size:.8rem!important;letter-spacing:.1em!important}
+ .site-header.green-shared-header .menu{min-width:66px!important;padding:8px 9px!important}
+ .site-header.green-shared-header #tzWidget{flex-basis:76px!important;width:76px!important;min-width:76px!important;min-height:64px!important}
+ .site-header.green-shared-header #tzWidget .tz-date{font-size:.45rem!important}
+ .site-header.green-shared-header #tzWidget .tz-number,.site-header.green-shared-header #tzWidget .tz-glyph{width:21px!important;height:21px!important;flex-basis:21px!important}
+ .site-header.green-shared-header #tzWidget .tz-calendar-link{font-size:.4rem!important}
 }
 </style>
 </head>
@@ -376,15 +379,10 @@ header.green-shared-header #tzWidget{display:flex!important;position:static!impo
   </section>
 </div>
 
-<header class="site-header topbar green-shared-header"><div class="wrap header-inner"><a class="brand" href="sl/index.html" aria-label="BLINKITA home"><span class="seiri-brand-name">BLINKITA</span></a><button class="menu" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav"><span class="menu-bars" aria-hidden="true"><span></span><span></span><span></span></span><span class="menu-label">MENI</span></button><nav class="nav" id="mainNav" aria-label="BLINKITA navigation"><a href="sl/index.html#discover">Razišči</a><a href="sl/personal-guidance.html">Osebno vodenje</a><a href="sl/maya-time-astrology.html">Majevski čas</a><a href="sl/wellness.html">Dobro počutje</a><a href="sl/index.html#belize">Belize</a><a href="sl/travel.html">Potovanja</a><a href="sl/stay.html">Nastanitev</a><a href="sl/about.html">O BLINKITA</a><a href="sl/index.html#journey-planner" class="nav-cta">Začni svoje potovanje</a></nav><div class="language-switch" aria-label="Izbira jezika"><a href="/wellness.html" lang="en">EN</a><span>·</span><strong aria-current="page">SL</strong></div><button class="tz-widget" id="tzWidget" aria-label="Open Living Time and plan a date">
-  <div class="tz-top"><span class="tz-label" aria-hidden="true"></span><span class="tz-date" id="tzDate">28 Oct 2026</span></div>
-  <div class="tz-symbols">
-    <span class="tz-number" id="tzNumber" aria-label="Tzolk'in number"><img id="tzNumberImage" src="/assets/tzolkin/tone-6.png" alt="" /></span>
-    <span class="tz-glyph" id="tzGlyph" aria-label="Maya day sign"><img id="tzGlyphImage" src="/assets/tzolkin/cauac.png" alt="" /></span>
-  </div>
-  <div class="tz-widget-meta"><span class="tz-name" id="tzName">6 Kawoq</span><span class="tz-calendar-link">PLANIRAJ DATUM &rarr;</span></div>
-  <div class="tz-sub"></div>
-  <div class="tz-open">Odpri današnji razmislek</div>
+<header class="site-header topbar green-shared-header"><div class="wrap header-inner"><a class="brand" href="sl/index.html" aria-label="BLINKITA home"><span class="seiri-brand-name">BLINKITA</span></a><button class="menu" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav"><span class="menu-bars" aria-hidden="true"><span></span><span></span><span></span></span><span class="menu-label">MENI</span></button><nav class="nav" id="mainNav" aria-label="BLINKITA navigation"><a href="sl/index.html#discover">Razišči</a><a href="sl/personal-guidance.html">Osebno vodenje</a><a href="sl/maya-time-astrology.html">Majevski čas</a><a href="sl/wellness.html">Dobro počutje</a><a href="sl/index.html#belize">Belize</a><a href="sl/travel.html">Potovanja</a><a href="sl/stay.html">Nastanitev</a><a href="sl/about.html">O BLINKITA</a><a href="sl/index.html#journey-planner" class="nav-cta">Začni svoje potovanje</a></nav><div class="language-switch" aria-label="Izbira jezika"><a href="/wellness.html" lang="en">EN</a><span>·</span><strong aria-current="page">SL</strong></div><button class="tz-widget" id="tzWidget" type="button" aria-label="Odpri tradicionalni majevski koledar Tzolk'in in izberi datum">
+  <span class="tz-widget-date" id="tzDate">28 Oct 2026</span>
+  <span class="tz-widget-symbols"><span class="tz-number"><img id="tzNumberImage" src="/assets/tzolkin/tone-6.png" alt="" /></span><span class="tz-glyph"><img id="tzGlyphImage" src="/assets/tzolkin/cauac.png" alt="" /></span></span>
+  <span class="tz-widget-action">PLANIRAJ DATUM</span>
 </button></div></header>
 <section class="hero" aria-labelledby="wellness-title"><img src="/assets/seiri/wellness.jpg" alt="Restorative bodywork in a quiet beachfront setting" fetchpriority="high"><div class="hero-copy"><div class="eyebrow">Značilna izkušnja BLINKITA</div><h1 id="wellness-title">Vrni se v svoj <em>lastni ritem.</em></h1><p>Skrbno izbrana zbirka zasebnih srečanj, obnovitvenih obredov in globljih potovanj, oblikovanih glede na tvoje potrebe, tempo in čas v Belizeju.</p><div class="actions"><a class="btn primary" href="#catalog">Razišči izkušnje</a><a class="btn" href="#enquire">Pošlji zasebno povpraševanje</a></div></div></section>
 <nav class="jumpbar" aria-label="Explore wellness offerings"><a href="#catalog">Individualna srečanja</a><a href="#rhythm">Dnevni ritem</a><a href="#programs">Karibski podpis</a><a href="#retreats">Oddihi in potovanja</a><a href="#online">Spletne izkušnje</a></nav>
