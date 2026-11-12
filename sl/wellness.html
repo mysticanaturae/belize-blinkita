@@ -280,6 +280,37 @@ header.green-shared-header #tzWidget{position:static!important;display:flex!impo
  header.green-shared-header #tzWidget .tz-calendar-link{font-size:.36rem!important}
 }
 </style>
+
+<style id="wellness-header-compact-final">
+/* Compact, single-row header: navigation stays within its own column. */
+header.green-shared-header{display:block!important;width:100%!important;min-height:0!important;padding:0!important;position:sticky!important;top:0!important;left:auto!important;right:auto!important;transform:none!important;background:#123d37!important;z-index:1500!important}
+header.green-shared-header>.header-inner{display:grid!important;grid-template-columns:max-content minmax(0,1fr) max-content 112px!important;grid-template-areas:"brand nav language calendar"!important;align-items:center!important;gap:clamp(10px,1.2vw,20px)!important;width:100%!important;max-width:none!important;min-height:78px!important;margin:0!important;padding:9px clamp(14px,2.5vw,34px)!important;box-sizing:border-box!important;position:relative!important}
+header.green-shared-header .brand{grid-area:brand!important;min-width:max-content!important;justify-self:start!important}
+header.green-shared-header nav#mainNav{grid-area:nav!important;display:flex!important;position:static!important;min-width:0!important;width:100%!important;max-width:100%!important;overflow-x:auto!important;overflow-y:hidden!important;scrollbar-width:none!important;flex-flow:row nowrap!important;justify-content:flex-start!important;align-items:center!important;gap:clamp(7px,.8vw,12px)!important;margin:0!important;padding:0!important;border:0!important;outline:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;white-space:nowrap!important}
+header.green-shared-header nav#mainNav::-webkit-scrollbar{display:none!important}
+header.green-shared-header nav#mainNav a{flex:0 0 auto!important;display:inline-flex!important;white-space:nowrap!important;padding:8px 0!important;border:0!important;background:transparent!important}
+header.green-shared-header .language-switch{grid-area:language!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:7px!important;margin:0!important;white-space:nowrap!important}
+header.green-shared-header #tzWidget{grid-area:calendar!important;justify-self:end!important;width:112px!important;min-width:112px!important;max-width:112px!important;margin:0!important;position:static!important;transform:none!important}
+header.green-shared-header .menu{display:none!important}
+@media(max-width:1100px){
+ header.green-shared-header>.header-inner{grid-template-columns:max-content minmax(64px,1fr) max-content 100px!important;grid-template-areas:"brand menu language calendar"!important;gap:clamp(8px,1vw,14px)!important;min-height:76px!important}
+ header.green-shared-header .menu{grid-area:menu!important;display:flex!important;justify-self:center!important;align-items:center!important}
+ header.green-shared-header nav#mainNav{display:none!important;position:absolute!important;top:100%!important;left:12px!important;right:12px!important;width:auto!important;max-width:none!important;z-index:1501!important;flex-direction:column!important;align-items:stretch!important;gap:0!important;padding:12px 18px!important;border:1px solid rgba(215,187,119,.28)!important;background:#123d37!important;box-shadow:0 16px 35px rgba(0,0,0,.22)!important;overflow:auto!important}
+ header.green-shared-header nav#mainNav.open{display:flex!important}
+ header.green-shared-header nav#mainNav a{display:flex!important;padding:13px 8px!important;border-bottom:1px solid rgba(255,255,255,.14)!important}
+ header.green-shared-header nav#mainNav .nav-cta{justify-content:center!important;margin-top:10px!important}
+}
+@media(max-width:520px){
+ header.green-shared-header>.header-inner{grid-template-columns:minmax(0,1fr) 58px max-content 70px!important;gap:5px!important;min-height:68px!important;padding:6px 8px!important}
+ header.green-shared-header .brand .seiri-brand-name{font-size:.65rem!important;letter-spacing:.025em!important}
+ header.green-shared-header .menu{min-width:55px!important;padding:7px 5px!important}
+ header.green-shared-header .language-switch{font-size:10px!important;gap:5px!important}
+ header.green-shared-header #tzWidget{width:70px!important;min-width:70px!important;max-width:70px!important;padding:3px!important}
+ header.green-shared-header #tzWidget .tz-date{font-size:.42rem!important}
+ header.green-shared-header #tzWidget .tz-number,header.green-shared-header #tzWidget .tz-glyph{width:20px!important;height:20px!important;min-width:20px!important;min-height:20px!important;flex-basis:20px!important}
+ header.green-shared-header #tzWidget .tz-calendar-link{font-size:.34rem!important;letter-spacing:.03em!important}
+}
+</style>
 </head>
 <body>
 <div class="tz-modal-backdrop" id="tzBackdrop" role="dialog" aria-modal="true" aria-labelledby="tzModalTitle">
@@ -317,7 +348,7 @@ header.green-shared-header #tzWidget{position:static!important;display:flex!impo
     <span class="tz-number" id="tzNumber" aria-label="Tzolk'in number"><img id="tzNumberImage" src="/assets/tzolkin/tone-6.png" alt="" /></span>
     <span class="tz-glyph" id="tzGlyph" aria-label="Maya day sign"><img id="tzGlyphImage" src="/assets/tzolkin/cauac.png" alt="" /></span>
   </div>
-  <div class="tz-widget-meta"><span class="tz-name" id="tzName">6 Kawoq</span><span class="tz-calendar-link">PLAN A DATE &rarr;</span></div>
+  <div class="tz-widget-meta"><span class="tz-name" id="tzName">6 Kawoq</span><span class="tz-calendar-link">PLANIRAJ DATUM &rarr;</span></div>
   <div class="tz-sub"></div>
   <div class="tz-open">Odpri današnji razmislek</div>
 </button></div></header>
