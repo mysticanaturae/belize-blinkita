@@ -172,7 +172,7 @@ footer{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;paddin
 .site-header .language-switch strong{color:var(--gold)}
 @media(max-width:650px){.site-header .header-inner{height:70px;min-height:70px;align-items:center;flex-direction:row;padding:0}.site-header .brand{font-size:.9rem}.site-header .menu{min-width:72px;padding:8px 10px}.site-header .language-switch{margin-left:auto}}
 </style>
-</head><body>
+<style id="offers-menu-initial-state">.site-header .nav:not(.open){display:none!important}.site-header .menu[aria-expanded="false"] .menu-bars span{transform:none!important;opacity:1!important}</style></head><body>
 <div class="tz-modal-backdrop" id="tzBackdrop" role="dialog" aria-modal="true" aria-labelledby="tzModalTitle">
   <section class="tz-modal">
     <button class="tz-close" id="tzClose" aria-label="Close reflection">×</button>
@@ -282,5 +282,5 @@ footer{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;paddin
 #tzWidget .tz-glyph img{display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;flex:0 0 auto!important;object-fit:contain!important;margin:auto!important;padding:0!important}
 </style>
 <script>if('serviceWorker' in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{});</script>
-<script id="blinkita-menu">(()=>{const button=document.getElementById('menuButton');const nav=document.getElementById('mainNav');if(!button||!nav)return;const close=()=>{nav.classList.remove('open');button.setAttribute('aria-expanded','false')};button.addEventListener('click',()=>{const open=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',close));document.addEventListener('click',event=>{if(!nav.contains(event.target)&&!button.contains(event.target))close()});document.addEventListener('keydown',event=>{if(event.key==='Escape')close()})})();</script>
+<script id="blinkita-menu">(()=>{const button=document.getElementById('menuButton');const nav=document.getElementById('mainNav');if(!button||!nav)return;nav.classList.remove('open');button.setAttribute('aria-expanded','false');const close=()=>{nav.classList.remove('open');button.setAttribute('aria-expanded','false')};button.addEventListener('click',()=>{const open=nav.classList.toggle('open');button.setAttribute('aria-expanded',String(open))});nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',close));document.addEventListener('click',event=>{if(!nav.contains(event.target)&&!button.contains(event.target))close()});document.addEventListener('keydown',event=>{if(event.key==='Escape')close()})})();</script>
 </body></html>
