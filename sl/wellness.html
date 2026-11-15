@@ -561,6 +561,61 @@ main .intro{background:#e9eee8}
 @media(max-width:920px){#catalog .catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){#catalog .catalog-grid{grid-template-columns:1fr;gap:15px}#catalog .catalog-actions{flex-wrap:wrap}#catalog .appointment-request,#catalog .whatsapp-request{flex:1 1 auto}}
 </style>
+
+<style id="blinkita-catalogue-discovery-panel">
+/* A distinct invitation panel that holds the catalogue introduction and its discovery controls together. */
+#catalog.catalog-section{background:#e9eee8!important;padding-top:clamp(42px,6vw,76px)!important}
+#catalog .catalog-discovery-panel{
+  position:relative;isolation:isolate;overflow:hidden;
+  max-width:1480px;margin:0 auto 34px;
+  padding:clamp(24px,4vw,58px);
+  background:linear-gradient(135deg,#f5e5d8 0%,#f1e9dc 48%,#e5eee6 100%);
+  border:1px solid rgba(153,119,72,.34);
+  box-shadow:0 22px 65px rgba(18,56,59,.12);
+}
+#catalog .catalog-discovery-panel:before{
+  content:"";position:absolute;z-index:-1;right:-110px;top:-190px;width:420px;height:420px;
+  border:1px solid rgba(151,119,70,.22);border-radius:50%;
+  box-shadow:0 0 0 28px rgba(151,119,70,.045),0 0 0 58px rgba(151,119,70,.035);
+}
+#catalog .catalog-intro-band{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,76px);
+  padding:0 0 clamp(30px,4vw,48px);margin:0 0 32px;
+  background:transparent!important;border:0!important;box-shadow:none!important;
+}
+#catalog .catalog-kicker{color:#8e7040}
+#catalog .catalog-kicker i{background:#a88650}
+#catalog .catalog-display-title{color:#173c37}
+#catalog .catalog-display-title em{color:#a47743}
+#catalog .catalog-intro-bottom{border-color:rgba(23,60,55,.2)}
+#catalog .catalog-index{color:#536960}
+#catalog .catalog-intro-mark{color:#a47743}
+#catalog .catalog-intro-aside{border-color:rgba(151,119,70,.45)}
+#catalog .catalog-intro-aside p{color:#435b52}
+#catalog .catalog-intro-aside strong{color:#8a6335}
+#catalog .catalog-count strong{color:#173c37}
+#catalog .catalog-count span{color:#8a6335}
+#catalog .catalog-browse-heading{border-color:rgba(23,60,55,.2)}
+#catalog .catalog-browse-heading span:first-child,#catalog .catalog-search-label,#catalog .catalog-filter-label,#catalog .pillar-filter-label{color:#8a6939}
+#catalog .catalog-browse-heading span:last-child{color:#435b52}
+#catalog .search{background:#fffdf8;border-color:#c9b99f}
+#catalog .filter{background:rgba(255,253,248,.7);border-color:#c8b99f;color:#294b42}
+#catalog .filter.active,#catalog .filter:hover{background:#173c37;border-color:#173c37;color:#fffdf8}
+#catalog .pillar-filter-wrap{border-color:rgba(23,60,55,.18)}
+#catalog .pillar-filters .filter{background:rgba(255,253,248,.82)}
+#catalog .pillar-filters .filter.active{background:#173c37;color:#fffdf8}
+#catalog .offer-note{max-width:none;margin:30px 0 0;padding:16px 20px;background:rgba(255,253,248,.58);border-left:3px solid #b28b50;color:#586b61}
+@media(max-width:760px){
+ #catalog .catalog-discovery-panel{padding:25px 19px;margin-bottom:26px}
+ #catalog .catalog-intro-band{grid-template-columns:1fr;gap:22px;padding-bottom:25px;margin-bottom:25px}
+ #catalog .catalog-intro-aside{border-top:1px solid rgba(151,119,70,.45);border-left:0;padding:22px 0 0}
+ #catalog .catalog-display-title{font-size:clamp(2.7rem,10vw,4rem)}
+ #catalog .catalog-count strong{font-size:4.7rem}
+ #catalog .catalog-browse-heading{display:block}
+ #catalog .catalog-browse-heading span:last-child{display:block;margin-top:8px}
+}
+</style>
+
 </head>
 <body>
 <div class="tz-modal-backdrop" id="tzBackdrop" role="dialog" aria-modal="true" aria-labelledby="tzModalTitle">
@@ -611,16 +666,16 @@ main .intro{background:#e9eee8}
 </div></div></section>
 <div class="wellness-mosaic"><img src="/assets/Tropical%20Mystical%20Wellness%20Collage-2.png" alt="Tropski mistični wellness kolaž z BLINKITA wellness doživetji v Belizeju" loading="lazy"></div>
 <section class="section catalog-section" id="catalog">
+<div class="catalog-discovery-panel">
 <div class="catalog-intro-band">
   <div class="catalog-intro-main">
-    <div class="catalog-kicker"><span>CARIBBEAN SIGNATURE</span><i></i><span>KATALOG BLINKITA</span></div>
+    <div class="catalog-kicker"><span>CARIBBEAN SIGNATURE</span><i></i><span>TELESNE TERAPIJE IN MASAŽE</span></div>
     <h2 class="catalog-display-title">Izberi, kar te vabi<br><em>nazaj v ravnovesje.</em></h2>
     <div class="catalog-intro-bottom"><span class="catalog-index">OSEBNA ZBIRKA · BELIZE IN ŠIRŠE</span><span class="catalog-intro-mark" aria-hidden="true">✳</span></div>
   </div>
   <div class="catalog-intro-aside">
     <div class="catalog-count"><strong>48</strong><span>RAZLIČNIH IZKUŠENJ BLINKITA</span></div>
-    <p>Od telesnih praks in majevske modrosti do energije, osebne preobrazbe, ceremonij, ustvarjalnosti ter družinskih doživetij. Vsaka izkušnja odpira svojo pot.</p>
-    <p>Razišči aktualni katalog BLINKITA in izberi srečanja, ki te nagovorijo. V <strong>MOJ BLINKITA</strong> shrani vse, o čemer želiš povprašati.</p>
+    <p>Razišči individualna srečanja in prakse v aktualnem katalogu BLINKITA. V <strong>MOJ BLINKITA</strong> shrani vse, o čemer želiš povprašati.</p>
   </div>
 </div>
 <div class="catalog-browse-heading"><span>RAZIŠČI KATALOG</span><span>Izberi izkušnjo po svojem občutku.</span></div>
@@ -629,7 +684,9 @@ main .intro{background:#e9eee8}
 <div class="catalog-filter-label">RAZIŠČI PO VRSTI IZKUŠNJE</div>
 <div class="filters" id="catalogFilters" role="group" aria-label="Filtriraj izkušnje BLINKITA"></div>
 <div class="pillar-filter-wrap"><div class="pillar-filter-label">RAZIŠČI PO STEBRIH BLINKITA</div><div class="filters pillar-filters" id="pillarFilters" role="group" aria-label="Filtriraj po stebrih BLINKITA"></div></div>
-<div class="catalog-results-count" id="catalogResultsCount" aria-live="polite">48 izkušenj BLINKITA</div><div class="catalog-grid" id="catalogGrid" aria-live="polite"></div><p class="offer-note">Trajanja srečanj in okvirne cene programov so prikazane, kot so navedene v konceptnem katalogu. Blanka potrdi aktualno obliko, podrobnosti in razpoložljivost vsake izkušnje BLINKITA.</p>
+<p class="offer-note">Trajanja srečanj in okvirne cene programov so prikazane, kot so navedene v konceptnem katalogu. Blanka potrdi aktualno obliko, podrobnosti in razpoložljivost vsake izkušnje BLINKITA.</p>
+</div>
+<div class="catalog-results-count" id="catalogResultsCount" aria-live="polite">48 izkušenj BLINKITA</div><div class="catalog-grid" id="catalogGrid" aria-live="polite"></div>
 </section>
 <section class="section rhythm" id="rhythm"><div class="section-head"><div><div class="eyebrow">Možen dnevni ritem</div><h2 class="section-title">Od prve svetlobe<br>do zadnjega sočnega žarka.</h2></div><p>Prilagodljiv programski koncept, ne nespremenljiv dnevni urnik. Ponudbo je mogoče preizkusiti in izpopolnjevati glede na zanimanje gostov, prostor in letni čas.</p></div><div class="rhythm-grid">
 <article class="rhythm-card"><img src="/assets/blinkita/morning-ritual-experience.jpg" alt="Obred sončnega vzhoda" loading="lazy"><div class="rhythm-copy"><div class="rhythm-time">Jutro / Prebujanje</div><h3>Obred sončnega vzhoda</h3><p>Nežno gibanje, dih, kakav in poživitev za začetek dneva z energijo in prisotnostjo.</p><a class="rhythm-enter" href="sl/sunrise-ritual.html">VSTOPI V JUTRO</a><button class="rhythm-heart" type="button" data-experience="Sunrise Ritual" aria-label="Shrani Sunrise Ritual v MOJ BLINKITA" aria-pressed="false"><span aria-hidden="true">&#9825;</span></button><span class="rhythm-heart-status" aria-live="polite"></span></div></article>
