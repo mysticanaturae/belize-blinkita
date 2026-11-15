@@ -510,6 +510,42 @@ main .intro{background:#e9eee8}
 @media(prefers-reduced-motion:reduce){#catalog .filter{transition:none}}
 </style>
 
+
+<style id="blinkita-high-ticket-catalogue">
+/* CARIBBEAN SIGNATURE — a considered catalogue, not a spa treatment menu */
+#catalog.catalog-section{padding-top:clamp(58px,7vw,92px);padding-bottom:clamp(68px,8vw,110px)}
+#catalog .catalog-intro-band{grid-template-columns:minmax(0,1.2fr) minmax(300px,.8fr);gap:clamp(34px,6vw,88px);margin-bottom:clamp(42px,5vw,64px);padding:clamp(38px,6vw,82px);background:linear-gradient(122deg,#102f2c 0%,#17463e 58%,#244f45 100%);box-shadow:0 26px 64px rgba(18,56,53,.18)}
+#catalog .catalog-kicker{font-size:.66rem;letter-spacing:.19em}
+#catalog .catalog-display-title{max-width:760px;font-size:clamp(3rem,6.1vw,6.1rem);line-height:.98;margin:34px 0 42px}
+#catalog .catalog-intro-bottom{padding-top:22px}
+#catalog .catalog-index{font-size:.62rem;letter-spacing:.17em}
+#catalog .catalog-intro-aside{padding-left:clamp(22px,3vw,42px)}
+#catalog .catalog-count{display:flex;align-items:center;gap:18px;margin:0 0 28px;padding-bottom:22px;border-bottom:1px solid rgba(215,187,119,.38)}
+#catalog .catalog-count strong{color:#e4cf9e;font:400 clamp(4.5rem,8vw,7.4rem)/.8 Georgia,serif;letter-spacing:-.06em}
+#catalog .catalog-count span{max-width:150px;color:#d7bb77;font:700 .62rem/1.6 Arial,sans-serif;letter-spacing:.16em}
+#catalog .catalog-intro-aside p{max-width:440px;font-size:13px;line-height:1.95}
+#catalog .catalog-browse-heading{margin-bottom:30px;padding-bottom:18px}
+#catalog .catalog-browse-heading span:first-child{font-size:.68rem;letter-spacing:.18em}
+#catalog .catalog-browse-heading span:last-child{font-size:1.12rem}
+#catalog .catalog-search-label,#catalog .catalog-filter-label{font-size:.65rem;letter-spacing:.16em}
+#catalog .search{max-width:520px;min-height:54px;padding:16px 18px;font-size:13px}
+#catalog .filters{gap:10px;margin-bottom:30px}
+#catalog .filter{min-height:43px;padding:13px 17px;font-size:.62rem;letter-spacing:.1em}
+#catalog .pillar-filter-wrap{margin-top:38px;padding-top:26px}
+#catalog .pillar-filter-label{font-size:.66rem;letter-spacing:.17em}
+#catalog .pillar-filters .filter{min-width:76px;min-height:46px;font-size:.67rem;letter-spacing:.13em}
+#catalog .offer-note{max-width:940px;margin-top:38px;padding:20px 24px;font-size:11px;line-height:1.9}
+@media(max-width:760px){
+ #catalog .catalog-intro-band{grid-template-columns:1fr;gap:28px;padding:34px 26px}
+ #catalog .catalog-display-title{font-size:clamp(2.9rem,11vw,4.5rem);margin:28px 0 34px}
+ #catalog .catalog-intro-aside{padding:24px 0 0;border-left:0;border-top:1px solid rgba(215,187,119,.45)}
+ #catalog .catalog-count{margin-bottom:22px}
+ #catalog .catalog-count strong{font-size:5rem}
+ #catalog .catalog-browse-heading{gap:8px}
+ #catalog .catalog-browse-heading span:last-child{font-size:1rem}
+}
+</style>
+
 </head>
 <body>
 <div class="tz-modal-backdrop" id="tzBackdrop" role="dialog" aria-modal="true" aria-labelledby="tzModalTitle">
@@ -559,9 +595,28 @@ main .intro{background:#e9eee8}
 <article class="wellness-featured-card"><img src="/assets/03-aqua-lemu-reiki.jpg" alt="Aqua Lemu Reiki energy practice" loading="lazy"><div class="wellness-featured-copy"><div class="eyebrow">BODY · ENERGY PRACTICE</div><h3>Aqua Lemu Reiki</h3><p>A Reiki experience inspired by the ocean, available as an individual in-person or distance session.</p><a href="/energy-and-wellbeing.html">Discover Aqua Lemu Reiki ↗</a></div></article>
 </div></div></section>
 <div class="wellness-mosaic"><img src="/assets/Tropical%20Mystical%20Wellness%20Collage-2.png" alt="Tropical mystical wellness collage featuring BLINKITA wellness experiences in Belize" loading="lazy"></div>
-<section class="section catalog-section" id="catalog"><div class="catalog-intro-band"><div class="catalog-intro-main"><div class="catalog-kicker"><span>CARIBBEAN SIGNATURE</span><i></i><span>THE BLINKITA EXPERIENCE COLLECTION</span></div><h2 class="catalog-display-title">Come back to yourself.<br><em>One experience at a time.</em></h2><div class="catalog-intro-bottom"><span class="catalog-index">A PERSONAL COLLECTION · BELIZE & BEYOND</span><span class="catalog-intro-mark" aria-hidden="true">✳</span></div></div><div class="catalog-intro-aside"><span class="catalog-aside-number">01 / EXPLORE</span><p>Some experiences begin with the body. Others open through energy, ritual, creativity or a new way of seeing time.</p><p>Explore the individual sessions and practices in the BLINKITA collection. Save what speaks to you in <strong>MY BLINKITA</strong>, and return to it when you are ready to ask.</p></div></div><div class="catalog-browse-heading"><span>FIND YOUR WAY IN</span><span>Choose a path that feels right today</span></div><label class="catalog-search-label" for="catalogSearch">SEARCH THE COLLECTION</label><input class="search" id="catalogSearch" type="search" placeholder="Search experiences..." aria-label="Search wellness experiences"><div class="catalog-filter-label">BROWSE BY EXPERIENCE</div><div class="filters" id="catalogFilters" role="group" aria-label="Filter wellness experiences"></div>
-<div class="pillar-filter-wrap"><div class="pillar-filter-label">EXPLORE BY BLINKITA PILLAR</div><div class="filters pillar-filters" id="pillarFilters" role="group" aria-label="Filter by BLINKITA pillar"></div></div><div class="catalog-modal" id="catalogModal" aria-hidden="true"><div class="catalog-modal-backdrop" data-catalog-close></div><section class="catalog-modal-panel" role="dialog" aria-modal="true" aria-labelledby="catalogModalTitle"><button class="catalog-modal-close" id="catalogModalClose" type="button" aria-label="Close experiences">&times;</button><div class="catalog-modal-heading"><div class="eyebrow" id="catalogModalKicker">THE BLINKITA CATALOGUE</div><h2 id="catalogModalTitle">All experiences</h2><p id="catalogModalDescription">Explore the sessions and practices in this collection. Save an experience to MY BLINKITA to remember it.</p></div><div class="catalog-grid" id="catalogGrid"></div></section></div>
-<p class="offer-note">Session durations and indicative programme fees are shown as listed in the concept catalogue. Blanka confirms the current format, details and availability for each BLINKITA experience.</p></section>
+<section class="section catalog-section" id="catalog">
+<div class="catalog-intro-band">
+  <div class="catalog-intro-main">
+    <div class="catalog-kicker"><span>CARIBBEAN SIGNATURE</span><i></i><span>THE BLINKITA CATALOGUE</span></div>
+    <h2 class="catalog-display-title">Choose what calls you<br><em>back into balance.</em></h2>
+    <div class="catalog-intro-bottom"><span class="catalog-index">A PERSONAL COLLECTION · BELIZE & BEYOND</span><span class="catalog-intro-mark" aria-hidden="true">✳</span></div>
+  </div>
+  <div class="catalog-intro-aside">
+    <div class="catalog-count"><strong>48</strong><span>UNIQUE BLINKITA EXPERIENCES</span></div>
+    <p>From bodywork and Maya wisdom to energy, personal transformation, ceremony, creativity and family experiences. Each opens a different way in.</p>
+    <p>Explore the current BLINKITA catalogue and choose the experiences that speak to you. Save everything you would like to enquire about in <strong>MY BLINKITA</strong>.</p>
+  </div>
+</div>
+<div class="catalog-browse-heading"><span>EXPLORE THE COLLECTION</span><span>Follow the experience that feels right.</span></div>
+<label class="catalog-search-label" for="catalogSearch">SEARCH 48 EXPERIENCES</label>
+<input class="search" id="catalogSearch" type="search" placeholder="Search by name or theme..." aria-label="Search BLINKITA experiences">
+<div class="catalog-filter-label">BROWSE BY EXPERIENCE</div>
+<div class="filters" id="catalogFilters" role="group" aria-label="Filter BLINKITA experiences"></div>
+<div class="pillar-filter-wrap"><div class="pillar-filter-label">EXPLORE BY BLINKITA PILLAR</div><div class="filters pillar-filters" id="pillarFilters" role="group" aria-label="Filter by BLINKITA pillar"></div></div>
+<div class="catalog-modal" id="catalogModal" aria-hidden="true"><div class="catalog-modal-backdrop" data-catalog-close></div><section class="catalog-modal-panel" role="dialog" aria-modal="true" aria-labelledby="catalogModalTitle"><button class="catalog-modal-close" id="catalogModalClose" type="button" aria-label="Close catalogue">&times;</button><div class="catalog-modal-heading"><div class="eyebrow" id="catalogModalKicker">THE BLINKITA CATALOGUE</div><h2 id="catalogModalTitle">All experiences</h2><p id="catalogModalDescription">Explore 48 individual BLINKITA experiences.</p></div><div class="catalog-grid" id="catalogGrid"></div></section></div>
+<p class="offer-note">Session durations and indicative programme prices are shown as listed in the concept catalogue. Blanka confirms the current format, details and availability of each BLINKITA experience.</p>
+</section>
 <section class="section rhythm" id="rhythm"><div class="section-head"><div><div class="eyebrow">A possible daily rhythm</div><h2 class="section-title">From first light<br>to the last glow.</h2></div><p>A flexible program concept, not a fixed daily schedule. Offerings can be piloted and refined around guest demand, space and season.</p></div><div class="rhythm-grid">
 <article class="rhythm-card"><img src="assets/blinkita/morning-ritual-experience.jpg" alt="Sunrise Ritual" loading="lazy"><div class="rhythm-copy"><div class="rhythm-time">Morning / Awaken</div><h3>Sunrise Ritual</h3><p>Gentle movement, breath, cacao and rejuvenation to welcome the day with energy and presence.</p><a class="rhythm-enter" href="sunrise-ritual.html">ENTER SUNRISE</a><button class="rhythm-heart" type="button" data-experience="Sunrise Ritual" aria-label="Save Sunrise Ritual to MY BLINKITA" aria-pressed="false"><span aria-hidden="true">&#9825;</span></button><span class="rhythm-heart-status" aria-live="polite"></span></div></article>
 <article class="rhythm-card"><img src="assets/blinkita/privateblinkita.jpg" alt="Private BLINKITA session" loading="lazy"><div class="rhythm-copy"><div class="rhythm-time">Day / Restore</div><h3>Private BLINKITA</h3><p>Individual treatments and personal sessions, scheduled around the guest rather than a one-size-fits-all timetable.</p><a class="rhythm-enter" href="private-blinkita.html">ENTER PRIVATE</a><button class="rhythm-heart" type="button" data-experience="Private BLINKITA" aria-label="Save Private BLINKITA to MY BLINKITA" aria-pressed="false"><span aria-hidden="true">&#9825;</span></button><span class="rhythm-heart-status" aria-live="polite"></span></div></article>
@@ -647,7 +702,7 @@ catalogItems.forEach(item=>{item.pillar=pillarByExperience[item.n]||'LIFE'});
 const pillarFilters = [{id:'all',label:'All pillars'},{id:'BODY',label:'BODY'},{id:'MIND',label:'MIND'},{id:'TIME',label:'TIME'},{id:'LIFE',label:'LIFE'},{id:'CIRCLE',label:'CIRCLE'}];
 let activePillar='all';
 const memoryStore = 'seiriPersonalMemories_v1';
-const filters = [{id:'all',label:'All experiences'},{id:'bodywork',label:'Bodywork'},{id:'wisdom',label:'Energy & wisdom'},{id:'coaching',label:'Transformation'},{id:'ceremony',label:'Ceremony & ritual'},{id:'creative',label:'Creative'},{id:'family',label:'Family & kids'}];
+const filters = [{id:'all',label:'All experiences'},{id:'bodywork',label:'Bodywork'},{id:'wisdom',label:'Energy & wisdom'},{id:'coaching',label:'Transformation'},{id:'ceremony',label:'Ceremony & ritual'},{id:'creative',label:'Creativity'},{id:'family',label:'Family moments'}];
 let activeFilter = 'all';
 function savedExperiences(){try{return JSON.parse(localStorage.getItem(memoryStore)||'[]')}catch(error){return[]}}
 function saveExperience(title,button){const items=savedExperiences();const savedTitle='Saved experience: '+title;if(items.some(item=>item.title===savedTitle)){button.textContent='Already saved';button.classList.add('saved');return}items.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,7),title:savedTitle,note:"I'm interested in learning more about this experience. Availability, inclusions and final pricing should be confirmed with BLINKITA.",photo:'',date:new Date().toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}),createdAt:new Date().toISOString()});try{localStorage.setItem(memoryStore,JSON.stringify(items));button.textContent='Saved to MY BLINKITA';button.classList.add('saved')}catch(error){button.textContent='Unable to save'}}
