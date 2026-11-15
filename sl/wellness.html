@@ -455,6 +455,25 @@ main .intro{padding-left:clamp(28px,8vw,120px)!important;padding-right:clamp(28p
 @media(max-width:650px){main .section,main .intro{padding-left:22px!important;padding-right:22px!important}}
 </style>
 <style id="blinkita-wellness-mosaic">.wellness-mosaic{padding:0 clamp(24px,7vw,100px) clamp(48px,6vw,78px);background:var(--paper)}.wellness-mosaic img{display:block;width:100%;height:auto;max-height:620px;object-fit:cover;object-position:center;border-radius:2px}</style>
+<style id="wellness-featured-and-colours">
+main .intro{background:#e9eee8}
+.wellness-mosaic{background:#f3dfcf!important;padding-top:clamp(36px,5vw,64px);padding-bottom:clamp(48px,6vw,78px)}
+.wellness-featured{background:#f7f3eb;color:#102d2b;padding:clamp(54px,7vw,88px) clamp(24px,7vw,100px)}
+.wellness-featured-inner{max-width:1440px;margin:0 auto}
+.wellness-featured-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}
+.wellness-featured-head .eyebrow,.wellness-featured-copy .eyebrow{font:9px Arial,sans-serif;letter-spacing:.16em;color:#947a42;text-transform:uppercase}
+.wellness-featured-head h2{font-size:clamp(34px,4.5vw,54px);font-weight:400;line-height:1.08;margin:12px 0 0}
+.wellness-featured-head>p{max-width:470px;margin:0;color:#68766f;font:13px/1.8 Arial,sans-serif}
+.wellness-featured-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.wellness-featured-card{display:flex;flex-direction:column;min-width:0;background:#fbf8f1;border:1px solid rgba(23,60,55,.12)}
+.wellness-featured-card>img{display:block;width:100%;height:175px;object-fit:cover}
+.wellness-featured-copy{display:flex;flex-direction:column;align-items:flex-start;flex:1;padding:19px 18px 21px}
+.wellness-featured-copy h3{font-size:1.2rem;line-height:1.2;margin:10px 0}
+.wellness-featured-copy p{font:12px/1.7 Arial,sans-serif;color:#62736c;margin:0 0 18px;flex:1}
+.wellness-featured-copy a{margin-top:auto;border-bottom:1px solid #c9a66b;padding-bottom:4px;color:#173c37;text-decoration:none;font:9px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:900px){.wellness-featured-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.wellness-featured-card>img{height:200px}.wellness-featured-head{display:block}.wellness-featured-head>p{margin-top:14px}}
+@media(max-width:560px){.wellness-featured-grid{grid-template-columns:1fr}.wellness-featured-card{display:grid;grid-template-columns:38% 1fr}.wellness-featured-card>img{height:100%;min-height:190px}.wellness-featured-copy{padding:15px 13px}.wellness-featured-copy h3{font-size:1.05rem}.wellness-featured-copy p{font-size:11px}}
+</style>
 </head>
 <body>
 <div class="tz-modal-backdrop" id="tzBackdrop" role="dialog" aria-modal="true" aria-labelledby="tzModalTitle">
@@ -495,6 +514,14 @@ main .intro{padding-left:clamp(28px,8vw,120px)!important;padding-right:clamp(28p
 <nav class="jumpbar" aria-label="Explore wellness offerings"><a href="#catalog">Individualna srečanja</a><a href="#rhythm">Dnevni ritem</a><a href="#programs">Karibski podpis</a><a href="#retreats">Oddihi in potovanja</a><a href="#online">Spletne izkušnje</a></nav>
 <main>
 <section class="intro"><div><div class="eyebrow">Dobro počutje z BLINKITO</div><h2>Čas je, da se vrneš k <em>sebi.</em></h2></div><div class="intro-copy"><p>Predstavljaj si ponudbo dobrega počutja, ki je neločljivo povezana s tem krajem: spreten dotik, obnovitvene prakse, tradicionalna majevska modrost časa in doživetja, ki gostom ostanejo v spominu še dolgo po odhodu.</p><p>Od zasebnih srečanj do doživetij v manjših skupinah: vsako ponudbo je mogoče premišljeno predstaviti in nato prilagoditi zanimanju gostov ter dejanskemu ritmu delovanja letovišča.</p><div class="promise">Predstavitev koncepta. Končna ponudba, izvajalci, oblike in razpoložljivost se potrdijo neposredno z BLINKITO.</div></div></section>
+<section class="wellness-featured" aria-labelledby="wellness-featured-title"><div class="wellness-featured-inner">
+<div class="wellness-featured-head"><div><div class="eyebrow">IZPOSTAVLJENO PRI BLINKITA</div><h2 id="wellness-featured-title">Štiri izkušnje za začetek.</h2></div><p>To so štiri najbolj obiskane izkušnje BLINKITA, ki povezujejo majevsko modrost časa, tradicionalne telesne terapije, obredni kakav in energijsko prakso.</p></div>
+<div class="wellness-featured-grid">
+<article class="wellness-featured-card"><img src="/assets/02-majevsko-branje-casa.jpg" alt="Tradicionalni majevski koledar in simboli Tzolk'in" loading="lazy"><div class="wellness-featured-copy"><div class="eyebrow">ČAS · OSEBNO BRANJE</div><h3>Maya Tzolk'in Calendar Reading</h3><p>Razišči tradicionalni 260-dnevni majevski koledar in osebno energijo svojega rojstnega dne.</p><a href="/sl/maya-time-astrology.html">Odkrij branje ↗</a></div></article>
+<article class="wellness-featured-card"><img src="/assets/Authentic%20traditional%20Maya%20abdominal%20massage%20therapy%20in%20a%20beautiful%20Belize%20Caribbean%20wellness%20sanctuary.%20Close-up%20editorial%20photograph%20of%20a%20woman%20lying%20comfortably%20on%20her%20back%20on%20a%20massage%20table.%20Her%20abdomen%20is%20(1).jpg" alt="Tradicionalna majevska abdominalna masaža" loading="lazy"><div class="wellness-featured-copy"><div class="eyebrow">TELO · TRADICIONALNA TELESNA TERAPIJA</div><h3>Maya Abdominal Massage Therapy</h3><p>Tradicionalni majevski pristop k abdominalni negi, na voljo v živo v Belizeju ali kot vodeno spletno učenje samomasaže.</p><a href="#catalog">Spoznaj prakso ↗</a></div></article>
+<article class="wellness-featured-card"><img src="/assets/cacao-ceremony-concept.jpg" alt="Obredni kakav, pripravljen za skupno srečanje" loading="lazy"><div class="wellness-featured-copy"><div class="eyebrow">KROG · OBRED</div><h3>Cacao Ceremony</h3><p>Osebni obred ali srečanje v manjši skupini z obrednim kakavom, namero in prostorom za povezovanje.</p><a href="/sl/cacao-ceremony.html">Spoznaj obred ↗</a></div></article>
+<article class="wellness-featured-card"><img src="/assets/03-aqua-lemu-reiki.jpg" alt="Energijska praksa Aqua Lemu Reiki" loading="lazy"><div class="wellness-featured-copy"><div class="eyebrow">TELO · ENERGIJSKA PRAKSA</div><h3>Aqua Lemu Reiki</h3><p>Reiki izkušnja z navdihom oceana, na voljo kot individualna terapija v živo ali na daljavo.</p><a href="/sl/energy-and-wellbeing.html">Odkrij Aqua Lemu Reiki ↗</a></div></article>
+</div></div></section>
 <div class="wellness-mosaic"><img src="/assets/Tropical%20Mystical%20Wellness%20Collage-2.png" alt="Tropski mistični wellness kolaž z BLINKITA wellness doživetji v Belizeju" loading="lazy"></div>
 <section class="section catalog-section" id="catalog"><div class="section-head"><div><div class="eyebrow">CARIBBEAN SIGNATURE · TELESNE TERAPIJE IN MASAŽE</div><h2 class="section-title">Izberi, kar te vabi<br>nazaj v ravnovesje.</h2></div><p>Razišči individualna srečanja in prakse v aktualnem katalogu BLINKITA. V MOJ BLINKITA shrani vse, o čemer želiš povprašati.</p></div><input class="search" id="catalogSearch" type="search" placeholder="Išči srečanja ..." aria-label="Išči wellness srečanja"><div class="filters" id="catalogFilters" role="group" aria-label="Filter wellness sessions"></div>
 <div class="pillar-filter-wrap"><div class="pillar-filter-label">Razišči po stebrih BLINKITA</div><div class="filters pillar-filters" id="pillarFilters" role="group" aria-label="Filtriraj po stebrih BLINKITA"></div></div><div class="catalog-modal" id="catalogModal" aria-hidden="true"><div class="catalog-modal-backdrop" data-catalog-close></div><section class="catalog-modal-panel" role="dialog" aria-modal="true" aria-labelledby="catalogModalTitle"><button class="catalog-modal-close" id="catalogModalClose" type="button" aria-label="Zapri izkušnje">&times;</button><div class="catalog-modal-heading"><div class="eyebrow" id="catalogModalKicker">KATALOG BLINKITA</div><h2 id="catalogModalTitle">Vse izkušnje</h2><p id="catalogModalDescription">Razišči srečanja in prakse v tej zbirki. Izkušnjo shrani v MOJ BLINKITA, da si jo zapomniš.</p></div><div class="catalog-grid" id="catalogGrid"></div></section></div>
