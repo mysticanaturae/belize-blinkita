@@ -244,6 +244,23 @@
 .retreat-triptych-image{width:min(calc(100% - 48px),1000px);margin:clamp(28px,4vw,52px) auto;}
 .retreat-triptych-image img{display:block;width:100%;max-width:100%;height:auto;object-fit:contain;border-radius:2px;}
 @media(max-width:600px){.retreat-triptych-image{width:calc(100% - 32px);margin:26px auto;}}
+
+/* Featured BLINKITA experiences */
+.featured-experiences{background:#f2eee4;padding:clamp(62px,7vw,92px) 0;color:var(--deep)}
+.featured-experiences .section-head{margin-bottom:34px}
+.featured-experiences .section-head .eyebrow{color:#987b43}
+.featured-experiences .section-head>p{max-width:480px;color:var(--muted)}
+.featured-experiences-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.featured-experience-card{display:flex;flex-direction:column;min-width:0;background:#fbf8f1;border:1px solid rgba(23,60,55,.12);transition:transform .25s ease,box-shadow .25s ease}
+.featured-experience-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(13,42,39,.09)}
+.featured-experience-card>img{display:block;width:100%;height:190px;object-fit:cover}
+.featured-experience-copy{display:flex;flex-direction:column;align-items:flex-start;flex:1;padding:21px 20px 23px}
+.featured-experience-copy .eyebrow{color:#987b43;font-size:.62rem;letter-spacing:.14em}
+.featured-experience-copy h3{font-size:1.28rem;line-height:1.2;margin:10px 0 9px}
+.featured-experience-copy p{font-size:.82rem;line-height:1.7;color:var(--muted);margin:0 0 20px;flex:1}
+.featured-experience-copy .text-link{font-size:.66rem;margin-top:auto}
+@media(max-width:900px){.featured-experiences-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.featured-experience-card>img{height:210px}}
+@media(max-width:560px){.featured-experiences-grid{grid-template-columns:1fr;gap:14px}.featured-experience-card{display:grid;grid-template-columns:40% 1fr}.featured-experience-card>img{height:100%;min-height:220px}.featured-experience-copy{padding:17px 15px}.featured-experience-copy h3{font-size:1.1rem}.featured-experience-copy p{font-size:.78rem}}
 </style>
 </head>
 <body>
@@ -315,6 +332,15 @@
 <div class="pathway online"><img src="assets/blinkita/personalguidance.jpg" alt="BLINKITA personal guidance online"><div class="pathway-content"><div><div class="eyebrow">Begin from anywhere</div><h2>ONLINE</h2><p>Explore a reading, a personal session, hypnosis or a guided experience from wherever life finds you.</p></div><a class="text-link" href="online.html">Discover online experiences ↗</a></div></div>
 <div class="pathway belize"><img src="assets/seiri/official-02-hero.webp" alt="Seiri del Mar in Hopkins, Belize"><div class="pathway-content"><div><div class="eyebrow">Meet BLINKITA in the Caribbean</div><h2>BELIZE</h2><p>Discover CARIBBEAN SIGNATURE bodywork, CARIBBEAN RESET retreats and CARIBBEAN LIVING TIME EXPEDITION journeys through the Maya world.</p></div><a class="text-link" href="belize-life.html">Explore Belize experiences ↗</a></div></div>
 </div></section>
+
+<section class="featured-experiences" aria-labelledby="featured-experiences-title"><div class="wrap">
+<div class="section-head"><div><div class="eyebrow">FEATURED AT BLINKITA</div><h2 id="featured-experiences-title">Featured BLINKITA Experiences.</h2></div><p>Our most visited experiences bring together traditional Maya wisdom, bodywork, ceremonial cacao and energy practice. Explore four ways to begin.</p></div>
+<div class="featured-experiences-grid">
+<article class="featured-experience-card"><img src="assets/02-majevsko-branje-casa.jpg" alt="Traditional Maya calendar and Tzolk'in symbols" loading="lazy"><div class="featured-experience-copy"><div class="eyebrow">TIME · PERSONAL READING</div><h3>Maya Tzolk'in Calendar Reading</h3><p>Explore the traditional 260-day Maya calendar and the personal energy of your birth day.</p><a class="text-link" href="maya-time-astrology.html">Explore the reading ↗</a></div></article>
+<article class="featured-experience-card"><img src="assets/Authentic%20traditional%20Maya%20abdominal%20massage%20therapy%20in%20a%20beautiful%20Belize%20Caribbean%20wellness%20sanctuary.%20Close-up%20editorial%20photograph%20of%20a%20woman%20lying%20comfortably%20on%20her%20back%20on%20a%20massage%20table.%20Her%20abdomen%20is%20(1).jpg" alt="Traditional Maya abdominal massage therapy" loading="lazy"><div class="featured-experience-copy"><div class="eyebrow">BODY · TRADITIONAL BODYWORK</div><h3>Maya Abdominal Massage Therapy</h3><p>A traditional Maya approach to abdominal care, available in person in Belize or as guided online self-care learning.</p><a class="text-link" href="wellness.html#catalog">Discover the practice ↗</a></div></article>
+<article class="featured-experience-card"><img src="assets/cacao-ceremony-concept.jpg" alt="Ceremonial cacao prepared for a gathering" loading="lazy"><div class="featured-experience-copy"><div class="eyebrow">CIRCLE · CEREMONY</div><h3>Cacao Ceremony</h3><p>A private ceremony or small gathering with ceremonial cacao, intention and space for connection.</p><a class="text-link" href="cacao-ceremony.html">Discover the ceremony ↗</a></div></article>
+<article class="featured-experience-card"><img src="assets/03-aqua-lemu-reiki.jpg" alt="Aqua Lemu Reiki energy practice" loading="lazy"><div class="featured-experience-copy"><div class="eyebrow">BODY · ENERGY PRACTICE</div><h3>Aqua Lemu Reiki</h3><p>An ocean-inspired Reiki experience, offered as an individual session in person or at a distance.</p><a class="text-link" href="energy-and-wellbeing.html">Explore Aqua Lemu Reiki ↗</a></div></article>
+</div></div></section>
 
 <section class="section online-section" id="online"><div class="wrap">
 <div class="section-head"><div><div class="eyebrow">Across distance, wherever you are</div><h2>Begin online.</h2></div><p>Belize is one expression of BLINKITA, not a requirement. Choose an online experience and start from home, while travelling or wherever you have a quiet moment for yourself.</p></div>
