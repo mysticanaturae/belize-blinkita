@@ -455,6 +455,25 @@ main .intro{padding-left:clamp(28px,8vw,120px)!important;padding-right:clamp(28p
 </style>
 
 <style id="blinkita-wellness-mosaic">.wellness-mosaic{padding:0 clamp(24px,7vw,100px) clamp(48px,6vw,78px);background:var(--paper)}.wellness-mosaic img{display:block;width:100%;height:auto;max-height:620px;object-fit:cover;object-position:center;border-radius:2px}</style>
+<style id="wellness-featured-and-colours">
+main .intro{background:#e9eee8}
+.wellness-mosaic{background:#f3dfcf!important;padding-top:clamp(36px,5vw,64px);padding-bottom:clamp(48px,6vw,78px)}
+.wellness-featured{background:#f7f3eb;color:#102d2b;padding:clamp(54px,7vw,88px) clamp(24px,7vw,100px)}
+.wellness-featured-inner{max-width:1440px;margin:0 auto}
+.wellness-featured-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:30px}
+.wellness-featured-head .eyebrow,.wellness-featured-copy .eyebrow{font:9px Arial,sans-serif;letter-spacing:.16em;color:#947a42;text-transform:uppercase}
+.wellness-featured-head h2{font-size:clamp(34px,4.5vw,54px);font-weight:400;line-height:1.08;margin:12px 0 0}
+.wellness-featured-head>p{max-width:470px;margin:0;color:#68766f;font:13px/1.8 Arial,sans-serif}
+.wellness-featured-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.wellness-featured-card{display:flex;flex-direction:column;min-width:0;background:#fbf8f1;border:1px solid rgba(23,60,55,.12)}
+.wellness-featured-card>img{display:block;width:100%;height:175px;object-fit:cover}
+.wellness-featured-copy{display:flex;flex-direction:column;align-items:flex-start;flex:1;padding:19px 18px 21px}
+.wellness-featured-copy h3{font-size:1.2rem;line-height:1.2;margin:10px 0}
+.wellness-featured-copy p{font:12px/1.7 Arial,sans-serif;color:#62736c;margin:0 0 18px;flex:1}
+.wellness-featured-copy a{margin-top:auto;border-bottom:1px solid #c9a66b;padding-bottom:4px;color:#173c37;text-decoration:none;font:9px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:900px){.wellness-featured-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.wellness-featured-card>img{height:200px}.wellness-featured-head{display:block}.wellness-featured-head>p{margin-top:14px}}
+@media(max-width:560px){.wellness-featured-grid{grid-template-columns:1fr}.wellness-featured-card{display:grid;grid-template-columns:38% 1fr}.wellness-featured-card>img{height:100%;min-height:190px}.wellness-featured-copy{padding:15px 13px}.wellness-featured-copy h3{font-size:1.05rem}.wellness-featured-copy p{font-size:11px}}
+</style>
 </head>
 <body>
 <div class="tz-modal-backdrop" id="tzBackdrop" role="dialog" aria-modal="true" aria-labelledby="tzModalTitle">
@@ -495,6 +514,14 @@ main .intro{padding-left:clamp(28px,8vw,120px)!important;padding-right:clamp(28p
 <nav class="jumpbar" aria-label="Explore wellness offerings"><a href="#catalog">Individual sessions</a><a href="#rhythm">Daily rhythm</a><a href="#programs">Caribbean Signature</a><a href="#retreats">Retreats &amp; journeys</a><a href="#online">Online experiences</a></nav>
 <main>
 <section class="intro"><div><div class="eyebrow">Wellness with BLINKITA</div><h2>Time to come back to <em>yourself.</em></h2></div><div class="intro-copy"><p>Imagine a wellness offering that feels inseparable from this place: skilled touch, restorative practices, traditional Maya time wisdom and experiences guests remember long after checkout.</p><p>From private sessions to small-group experiences, each offering can be introduced thoughtfully, then shaped by guest interest and the resort's real operational rhythm.</p><div class="promise">A concept preview. Final offerings, facilitators, formats and availability are confirmed directly with BLINKITA.</div></div></section>
+<section class="wellness-featured" aria-labelledby="wellness-featured-title"><div class="wellness-featured-inner">
+<div class="wellness-featured-head"><div><div class="eyebrow">FEATURED AT BLINKITA</div><h2 id="wellness-featured-title">Four experiences to begin with.</h2></div><p>These four experiences are among the most visited BLINKITA offerings, bringing together Maya time wisdom, traditional bodywork, ceremonial cacao and energy practice.</p></div>
+<div class="wellness-featured-grid">
+<article class="wellness-featured-card"><img src="/assets/02-majevsko-branje-casa.jpg" alt="Traditional Maya calendar and Tzolk'in symbols" loading="lazy"><div class="wellness-featured-copy"><div class="eyebrow">TIME · PERSONAL READING</div><h3>Maya Tzolk'in Calendar Reading</h3><p>Explore the traditional 260-day Maya calendar and the personal energy of your birth day.</p><a href="/maya-time-astrology.html">Explore the reading ↗</a></div></article>
+<article class="wellness-featured-card"><img src="/assets/Authentic%20traditional%20Maya%20abdominal%20massage%20therapy%20in%20a%20beautiful%20Belize%20Caribbean%20wellness%20sanctuary.%20Close-up%20editorial%20photograph%20of%20a%20woman%20lying%20comfortably%20on%20her%20back%20on%20a%20massage%20table.%20Her%20abdomen%20is%20(1).jpg" alt="Traditional Maya abdominal massage therapy" loading="lazy"><div class="wellness-featured-copy"><div class="eyebrow">BODY · TRADITIONAL BODYWORK</div><h3>Maya Abdominal Massage Therapy</h3><p>A traditional Maya approach to abdominal care, available in person in Belize or as guided online self-care learning.</p><a href="#catalog">Discover the practice ↗</a></div></article>
+<article class="wellness-featured-card"><img src="/assets/cacao-ceremony-concept.jpg" alt="Ceremonial cacao prepared for a gathering" loading="lazy"><div class="wellness-featured-copy"><div class="eyebrow">CIRCLE · CEREMONY</div><h3>Cacao Ceremony</h3><p>A private ceremony or small gathering with ceremonial cacao, intention and space for connection.</p><a href="/cacao-ceremony.html">Discover the ceremony ↗</a></div></article>
+<article class="wellness-featured-card"><img src="/assets/03-aqua-lemu-reiki.jpg" alt="Aqua Lemu Reiki energy practice" loading="lazy"><div class="wellness-featured-copy"><div class="eyebrow">BODY · ENERGY PRACTICE</div><h3>Aqua Lemu Reiki</h3><p>A Reiki experience inspired by the ocean, available as an individual in-person or distance session.</p><a href="/energy-and-wellbeing.html">Discover Aqua Lemu Reiki ↗</a></div></article>
+</div></div></section>
 <div class="wellness-mosaic"><img src="/assets/Tropical%20Mystical%20Wellness%20Collage-2.png" alt="Tropical mystical wellness collage featuring BLINKITA wellness experiences in Belize" loading="lazy"></div>
 <section class="section catalog-section" id="catalog"><div class="section-head"><div><div class="eyebrow">CARIBBEAN SIGNATURE · BODYWORK &amp; MASSAGE</div><h2 class="section-title">Choose what calls<br>you back to balance.</h2></div><p>Explore the individual sessions and practices in the current BLINKITA catalogue. Save anything you would like to ask about in MY BLINKITA.</p></div><input class="search" id="catalogSearch" type="search" placeholder="Search sessions..." aria-label="Search wellness sessions"><div class="filters" id="catalogFilters" role="group" aria-label="Filter wellness sessions"></div>
 <div class="pillar-filter-wrap"><div class="pillar-filter-label">Explore by BLINKITA pillar</div><div class="filters pillar-filters" id="pillarFilters" role="group" aria-label="Filter by BLINKITA pillar"></div></div><div class="catalog-modal" id="catalogModal" aria-hidden="true"><div class="catalog-modal-backdrop" data-catalog-close></div><section class="catalog-modal-panel" role="dialog" aria-modal="true" aria-labelledby="catalogModalTitle"><button class="catalog-modal-close" id="catalogModalClose" type="button" aria-label="Close experiences">&times;</button><div class="catalog-modal-heading"><div class="eyebrow" id="catalogModalKicker">THE BLINKITA CATALOGUE</div><h2 id="catalogModalTitle">All experiences</h2><p id="catalogModalDescription">Explore the sessions and practices in this collection. Save an experience to MY BLINKITA to remember it.</p></div><div class="catalog-grid" id="catalogGrid"></div></section></div>
