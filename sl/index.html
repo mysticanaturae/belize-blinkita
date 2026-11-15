@@ -227,6 +227,23 @@
 .singles-retreat-meta span{padding:8px 11px;border:1px solid rgba(18,56,59,.18);font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
 .singles-retreat-copy .text-link{display:inline-block;margin-top:6px;border-bottom:1px solid var(--gold);padding-bottom:5px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
 @media(max-width:760px){.singles-retreat-grid{grid-template-columns:1fr}.singles-retreat-visual{min-height:300px;order:2}}
+
+/* Izpostavljene BLINKITA izkušnje */
+.featured-experiences{background:#f2eee4;padding:clamp(62px,7vw,92px) 0;color:var(--deep)}
+.featured-experiences .section-head{margin-bottom:34px}
+.featured-experiences .section-head .eyebrow{color:#987b43}
+.featured-experiences .section-head>p{max-width:480px;color:var(--muted)}
+.featured-experiences-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.featured-experience-card{display:flex;flex-direction:column;min-width:0;background:#fbf8f1;border:1px solid rgba(23,60,55,.12);transition:transform .25s ease,box-shadow .25s ease}
+.featured-experience-card:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(13,42,39,.09)}
+.featured-experience-card>img{display:block;width:100%;height:190px;object-fit:cover}
+.featured-experience-copy{display:flex;flex-direction:column;align-items:flex-start;flex:1;padding:21px 20px 23px}
+.featured-experience-copy .eyebrow{color:#987b43;font-size:.62rem;letter-spacing:.14em}
+.featured-experience-copy h3{font-size:1.28rem;line-height:1.2;margin:10px 0 9px}
+.featured-experience-copy p{font-size:.82rem;line-height:1.7;color:var(--muted);margin:0 0 20px;flex:1}
+.featured-experience-copy .text-link{font-size:.66rem;margin-top:auto}
+@media(max-width:900px){.featured-experiences-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.featured-experience-card>img{height:210px}}
+@media(max-width:560px){.featured-experiences-grid{grid-template-columns:1fr;gap:14px}.featured-experience-card{display:grid;grid-template-columns:40% 1fr}.featured-experience-card>img{height:100%;min-height:220px}.featured-experience-copy{padding:17px 15px}.featured-experience-copy h3{font-size:1.1rem}.featured-experience-copy p{font-size:.78rem}}
 </style>
 </head>
 <body>
@@ -296,6 +313,15 @@
 <div class="pathway online"><img src="assets/blinkita/personalguidance.jpg" alt="BLINKITA spletno osebno vodenje"><div class="pathway-content"><div><div class="eyebrow">Začni od kjerkoli</div><h2>SPLETNO</h2><p>Razišči osebno branje, individualno srečanje, hipnozo ali vodeno izkušnjo, kjerkoli te življenje trenutno najde.</p></div><a class="text-link" href="/sl/online.html">Odkrij spletne izkušnje ↗</a></div></div>
 <div class="pathway belize"><img src="assets/seiri/official-02-hero.webp" alt="Seiri del Mar v Hopkinsu, Belize"><div class="pathway-content"><div><div class="eyebrow">Spoznaj BLINKITO na Karibih</div><h2>BELIZE</h2><p>Odkrij telesne terapije CARIBBEAN SIGNATURE, oddihe CARIBBEAN RESET in popotovanja CARIBBEAN LIVING TIME EXPEDITION skozi majevski svet, v butičnem resortu Seiri del Mar v Hopkinsu, Belize.</p></div><a class="text-link" href="/sl/belize-life.html">Razišči izkušnje v Belizeju ↗</a></div></div>
 </div></section>
+
+<section class="featured-experiences" aria-labelledby="featured-experiences-title"><div class="wrap">
+<div class="section-head"><div><div class="eyebrow">IZPOSTAVLJENO PRI BLINKITA</div><h2 id="featured-experiences-title">Izpostavljene BLINKITA izkušnje.</h2></div><p>Naše najbolj obiskane izkušnje povezujejo tradicionalno majevsko modrost, telesne terapije, obredni kakav in energijske prakse. Spoznaj štiri različne poti za svoj začetek.</p></div>
+<div class="featured-experiences-grid">
+<article class="featured-experience-card"><img src="assets/02-majevsko-branje-casa.jpg" alt="Tradicionalni majevski koledar in simboli Tzolk'in" loading="lazy"><div class="featured-experience-copy"><div class="eyebrow">ČAS · OSEBNO BRANJE</div><h3>Maya Tzolk'in Calendar Reading</h3><p>Razišči tradicionalni 260-dnevni majevski koledar in osebno energijo svojega rojstnega dne.</p><a class="text-link" href="/sl/maya-time-astrology.html">Odkrij branje ↗</a></div></article>
+<article class="featured-experience-card"><img src="assets/Authentic%20traditional%20Maya%20abdominal%20massage%20therapy%20in%20a%20beautiful%20Belize%20Caribbean%20wellness%20sanctuary.%20Close-up%20editorial%20photograph%20of%20a%20woman%20lying%20comfortably%20on%20her%20back%20on%20a%20massage%20table.%20Her%20abdomen%20is%20(1).jpg" alt="Tradicionalna majevska abdominalna masaža" loading="lazy"><div class="featured-experience-copy"><div class="eyebrow">TELO · TRADICIONALNA TELESNA TERAPIJA</div><h3>Maya Abdominal Massage Therapy</h3><p>Tradicionalni majevski pristop k abdominalni negi, na voljo v živo v Belizeju ali kot vodeno spletno učenje samomasaže.</p><a class="text-link" href="/sl/wellness.html#catalog">Spoznaj prakso ↗</a></div></article>
+<article class="featured-experience-card"><img src="assets/cacao-ceremony-concept.jpg" alt="Obredni kakav, pripravljen za skupno srečanje" loading="lazy"><div class="featured-experience-copy"><div class="eyebrow">KROG · OBRED</div><h3>Cacao Ceremony</h3><p>Osebni obred ali srečanje v manjši skupini z obrednim kakavom, namero in prostorom za povezovanje.</p><a class="text-link" href="/sl/cacao-ceremony.html">Spoznaj obred ↗</a></div></article>
+<article class="featured-experience-card"><img src="assets/03-aqua-lemu-reiki.jpg" alt="Energijska praksa Aqua Lemu Reiki" loading="lazy"><div class="featured-experience-copy"><div class="eyebrow">TELO · ENERGIJSKA PRAKSA</div><h3>Aqua Lemu Reiki</h3><p>Reiki izkušnja z navdihom oceana, na voljo kot individualna terapija v živo ali na daljavo.</p><a class="text-link" href="/sl/energy-and-wellbeing.html">Odkrij Aqua Lemu Reiki ↗</a></div></article>
+</div></div></section>
 
 <section class="section online-section" id="online"><div class="wrap">
 <div class="section-head"><div><div class="eyebrow">Na daljavo, kjerkoli si</div><h2>Začni na spletu.</h2><a class="text-link" href="/sl/online.html">Odkrij vse spletne izkušnje ↗</a></div><p>Belize je ena od možnosti za doživetje BLINKITE, ni pa pogoj. Izberi spletno izkušnjo in začni od doma, na poti ali kjerkoli najdeš miren trenutek zase.</p></div>
