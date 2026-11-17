@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+<title id="title">Ophichus, the Serpent Bearer</title><desc id="desc">Two human archetypes stand beneath a celestial zodiac circle above a turquoise Caribbean sea, surrounded by serpents and tropical silhouettes.</desc>
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#061d35"/><stop offset=".48" stop-color="#0b5260"/><stop offset="1" stop-color="#e39a62"/></linearGradient>
+ <radialGradient id="halo"><stop stop-color="#f4d58b" stop-opacity=".52"/><stop offset=".72" stop-color="#d4ad64" stop-opacity=".12"/><stop offset="1" stop-color="#d4ad64" stop-opacity="0"/></radialGradient>
+ <linearGradient id="sea" x2="0" y2="1"><stop stop-color="#0e9a9a"/><stop offset="1" stop-color="#063b4b"/></linearGradient>
+ <linearGradient id="gold" x2="1" y2="1"><stop stop-color="#fff0ba"/><stop offset=".48" stop-color="#c59b52"/><stop offset="1" stop-color="#8a6438"/></linearGradient>
+ <linearGradient id="skin" x2="1" y2="1"><stop stop-color="#d9a879"/><stop offset="1" stop-color="#7e4c3b"/></linearGradient>
+ <linearGradient id="cloth" x2="1" y2="1"><stop stop-color="#43b9b1"/><stop offset="1" stop-color="#0c4a54"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="12"/></filter>
+</defs>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<circle cx="800" cy="360" r="350" fill="url(#halo)"/>
+<circle cx="800" cy="360" r="275" fill="none" stroke="#e5c37a" stroke-width="3" opacity=".72"/>
+<circle cx="800" cy="360" r="244" fill="none" stroke="#f5dba0" stroke-width="1.5" stroke-dasharray="3 13" opacity=".75"/>
+<circle cx="800" cy="360" r="205" fill="none" stroke="#e5c37a" stroke-width="1" opacity=".45"/>
+<g fill="#fff1c6">
+ <circle cx="800" cy="80" r="5"/><circle cx="1040" cy="220" r="3"/><circle cx="1000" cy="520" r="4"/><circle cx="560" cy="520" r="3"/><circle cx="555" cy="225" r="4"/><circle cx="1260" cy="120" r="2"/><circle cx="300" cy="190" r="2"/><circle cx="1400" cy="300" r="3"/><circle cx="160" cy="370" r="2"/><circle cx="1170" cy="620" r="2"/><circle cx="420" cy="680" r="2"/><circle cx="700" cy="160" r="2"/><circle cx="920" cy="135" r="2"/>
+</g>
+<g stroke="#f2d99b" stroke-width="2" opacity=".7"><path d="M800 35v40M780 55h40M800 635v40M780 655h40M485 360h40M505 340v40M1075 360h40M1095 340v40"/></g>
+<path d="M0 620 Q220 570 410 620 T800 610 T1200 620 T1600 600 V900 H0Z" fill="url(#sea)"/>
+<path d="M0 685 Q250 640 480 690 T920 680 T1360 670 T1600 690" fill="none" stroke="#a5e0d3" stroke-width="3" opacity=".4"/>
+<path d="M0 760 Q300 710 570 760 T1100 750 T1600 760" fill="none" stroke="#8ad2c8" stroke-width="2" opacity=".28"/>
+<path d="M0 640 Q130 575 260 620 Q320 640 410 610 L410 900 H0Z" fill="#082c32"/>
+<path d="M1190 620 Q1320 540 1450 600 Q1510 625 1600 580 V900 H1190Z" fill="#092d31"/>
+<g fill="#07363a"><path d="M80 620q-20-130 10-250q-70 60-78 5q48 4 88 55q-35-95 15-115q-7 60 10 108q55-76 92-58q-40 34-70 105q65-45 100-15q-50 12-100 66l-12 99z"/><path d="M1400 620q-20-130 10-250q-70 60-78 5q48 4 88 55q-35-95 15-115q-7 60 10 108q55-76 92-58q-40 34-70 105q65-45 100-15q-50 12-100 66l-12 99z"/></g>
+<!-- female figure -->
+<g transform="translate(610 205)">
+ <path d="M125 170 Q60 225 65 345 L35 590 Q145 640 250 590 L220 345 Q225 225 170 170Z" fill="url(#skin)" stroke="#edc18a" stroke-width="3"/>
+ <path d="M110 185 Q55 210 5 320 Q-5 345 20 350 Q75 335 122 278 M185 185 Q245 220 292 310 Q306 340 280 350 Q230 335 180 278" fill="none" stroke="url(#skin)" stroke-width="38" stroke-linecap="round"/>
+ <path d="M78 215 Q120 185 175 215 L215 420 Q145 460 80 420Z" fill="url(#cloth)" opacity=".95"/>
+ <path d="M110 155 Q120 115 150 112 Q180 118 188 155 L180 195 Q148 215 115 192Z" fill="url(#skin)"/>
+ <path d="M112 143 Q105 85 151 78 Q198 85 190 145 Q173 112 146 117 Q126 119 112 143Z" fill="#251f25"/>
+ <path d="M110 105 Q85 75 104 38 Q130 75 145 30 Q160 72 185 38 Q205 84 183 107" fill="none" stroke="url(#gold)" stroke-width="8"/>
+ <path d="M100 205 Q148 230 196 205" fill="none" stroke="url(#gold)" stroke-width="8"/>
+ <path d="M130 235 L148 310 L170 235" fill="none" stroke="#f2d58d" stroke-width="5"/>
+ <path d="M90 430 L70 590 M190 430 L215 590" stroke="#f0c28c" stroke-width="4"/>
+</g>
+<!-- male figure -->
+<g transform="translate(845 185)">
+ <path d="M85 175 Q40 210 35 330 L5 590 Q115 625 235 590 L205 330 Q200 210 155 175Z" fill="url(#skin)" stroke="#edc18a" stroke-width="3"/>
+ <path d="M90 190 Q40 180 0 280 Q-12 310 15 325 Q55 300 100 270 M150 190 Q215 180 265 270 Q280 300 252 325 Q205 300 160 270" fill="none" stroke="url(#skin)" stroke-width="40" stroke-linecap="round"/>
+ <path d="M70 190 Q115 150 170 190 L210 390 Q125 430 30 390Z" fill="url(#cloth)"/>
+ <path d="M85 160 Q88 110 122 104 Q160 108 170 160 L160 200 Q120 218 92 192Z" fill="url(#skin)"/>
+ <path d="M83 135 Q65 75 123 62 Q183 74 172 138 Q145 112 125 114 Q102 114 83 135Z" fill="#2b2527"/>
+ <path d="M82 95 L65 52 L97 76 L112 28 L128 75 L158 46 L160 96" fill="none" stroke="url(#gold)" stroke-width="9"/>
+ <path d="M70 210 Q125 235 185 210" fill="none" stroke="url(#gold)" stroke-width="8"/>
+ <path d="M100 245 L125 330 L150 245" fill="none" stroke="#f2d58d" stroke-width="5"/>
+ <path d="M58 425 L28 590 M185 425 L215 590" stroke="#f0c28c" stroke-width="4"/>
+</g>
+<!-- twin serpents -->
+<path d="M535 705 C430 620 570 555 650 620 C760 710 880 730 930 640 C1000 515 830 485 690 525 C535 570 500 430 620 375 C730 325 940 385 1035 300 C1105 235 1045 155 985 172" fill="none" stroke="#d8a84f" stroke-width="27" stroke-linecap="round"/>
+<path d="M535 705 C430 620 570 555 650 620 C760 710 880 730 930 640 C1000 515 830 485 690 525 C535 570 500 430 620 375 C730 325 940 385 1035 300 C1105 235 1045 155 985 172" fill="none" stroke="#126f70" stroke-width="17" stroke-linecap="round"/>
+<path d="M985 172 Q950 135 972 112 Q1000 85 1030 118 Q1040 140 1015 165 L985 172Z" fill="#1d7777" stroke="#e5c37a" stroke-width="4"/>
+<circle cx="1009" cy="130" r="4" fill="#ffe7a5"/>
+<path d="M1040 695 C1160 610 1050 555 970 600 C850 665 730 690 670 600 C600 495 760 460 900 485 C1060 515 1110 375 995 325 C885 280 680 345 580 255 C510 195 565 120 625 145" fill="none" stroke="#d6a452" stroke-width="25" stroke-linecap="round"/>
+<path d="M1040 695 C1160 610 1050 555 970 600 C850 665 730 690 670 600 C600 495 760 460 900 485 C1060 515 1110 375 995 325 C885 280 680 345 580 255 C510 195 565 120 625 145" fill="none" stroke="#145d70" stroke-width="15" stroke-linecap="round"/>
+<path d="M625 145 Q660 112 638 88 Q610 62 582 92 Q568 114 594 139 L625 145Z" fill="#1c6b75" stroke="#e5c37a" stroke-width="4"/>
+<circle cx="600" cy="108" r="4" fill="#ffe7a5"/>
+<path d="M0 0H1600V900H0Z" fill="none" stroke="#d7b978" stroke-opacity=".25" stroke-width="14"/>
+</svg>
