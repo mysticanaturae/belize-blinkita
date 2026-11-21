@@ -60,3 +60,16 @@
   .cs-gift-photo:before{height:46px;background-size:100% 62px}
   .cs-reading-card:nth-child(-n+3):before{height:48px;background-size:100% 50px}
 }
+
+
+/* Fit the new wide Christmas artwork without cropping */
+.cs-hero:before{background:linear-gradient(90deg,rgba(7,39,43,.94) 0%,rgba(7,39,43,.78) 38%,rgba(7,39,43,.16) 100%),url('/assets/Mystical%20Christmas%20Astrology%20by%20Moonlight-5.png') left center/cover no-repeat}
+.cs-hero-card img{width:100%;height:auto;max-height:190px;aspect-ratio:auto;object-fit:contain;background:#102a38}
+.cs-gift-photo img,.cs-gift-list>img{width:100%;height:auto;max-height:360px;aspect-ratio:auto;object-fit:contain;background:#102a38;padding:5px}
+.cs-reading-card:nth-child(-n+3) img{width:100%;height:auto;max-height:260px;aspect-ratio:auto;object-fit:contain;background:#102a38}
+@media(max-width:760px){
+  .cs-hero:before{background-position:left center}
+  .cs-hero-card img{max-height:160px}
+  .cs-gift-photo img,.cs-gift-list>img{max-height:300px}
+  .cs-reading-card:nth-child(-n+3) img{max-height:220px}
+}
