@@ -17,8 +17,8 @@
   }
 
   const body = document.body;
-  const year = body.dataset.campaignYear || '2027';
-  const season = sl ? (body.dataset.campaignSeasonSl || 'Božič') : (body.dataset.campaignSeason || 'Christmas');
+  const year = body.dataset.campaignYearValue || '2027';
+  const season = sl ? (body.dataset.campaignSeasonSl || 'Božič') : (body.dataset.campaignSeasonEn || 'Christmas');
   document.querySelectorAll('[data-campaign-year]').forEach(node => { node.textContent = year; });
   document.querySelectorAll('[data-campaign-season]').forEach(node => { node.textContent = season; });
 
