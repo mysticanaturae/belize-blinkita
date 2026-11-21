@@ -23,6 +23,9 @@ self.addEventListener('fetch', event => {
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin || url.pathname.endsWith('/sw.js')) return;
 
+  // Serve the new Cosmic Stories pages directly so an older offline cache cannot replace their HTML.
+  if (url.pathname.startsWith('/cosmic-stories/') || url.pathname.startsWith('/sl/kozmicne-zgodbe/')) return;
+
   if (event.request.mode === 'navigate') {
     event.respondWith(
       fetch(event.request)
