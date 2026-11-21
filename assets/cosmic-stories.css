@@ -32,3 +32,8 @@
 
 
 .cs-about-mark .cs-product-art{width:100%;height:auto;max-height:620px;aspect-ratio:auto;object-fit:contain;background:#102a38;padding:8px;margin:0 0 24px}
+
+
+/* More specific selectors override the generic cropped family and mobile cover rules */
+.cs-family-feature .cs-family-book-art{display:block;width:100%;height:auto;max-height:620px;aspect-ratio:auto;object-fit:contain;background:#102a38;padding:8px;margin:0 0 24px}
+.cs-couple .cs-about-mark .cs-product-art{display:block;width:100%;height:auto;max-height:620px;aspect-ratio:auto;object-fit:contain;background:#102a38;padding:8px;margin:0 0 24px}
