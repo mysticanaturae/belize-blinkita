@@ -29,3 +29,6 @@
 
 .cs-family-book-art{display:block;width:100%;height:auto;max-height:560px;aspect-ratio:auto;object-fit:contain;background:#102a38;padding:8px;margin:0 0 24px}
 @media(max-width:760px){.cs-family-book-art{max-height:620px}}
+
+
+.cs-about-mark .cs-product-art{width:100%;height:auto;max-height:620px;aspect-ratio:auto;object-fit:contain;background:#102a38;padding:8px;margin:0 0 24px}
