@@ -26,6 +26,7 @@
 <footer><div>BLINKITA · Raziskovalni prikaz astronomskega Sončevega cikla</div><div class="sources"><a href="https://www.iau.org/IAU/Astronomy-FAQs/Constellations.aspx" target="_blank" rel="noreferrer">IAU · ozvezdja in meje</a><a href="https://ssd.jpl.nasa.gov/planets/eph_export.html" target="_blank" rel="noreferrer">NASA JPL · efemeride</a><a href="https://ssd.jpl.nasa.gov/planets/approx_pos.html" target="_blank" rel="noreferrer">NASA JPL · približni položaji planetov</a><a href="https://www.stjarnhimlen.se/comp/ppcomp.html" target="_blank" rel="noreferrer">Algoritem za Sonce, Luno in planete</a></div></footer></main>
 <script>
 (()=>{
+const sl=document.documentElement.lang.toLowerCase().startsWith('sl');
 const D=Math.PI/180,r=x=>x*D,norm=x=>((x%360)+360)%360;
 const names=['Strelec','Kozorog','Vodnar','Ribi','Oven','Bik','Dvojčka','Rak','Lev','Devica','Tehtnica','Škorpijon','Ophiuchus'];
 const bounds=[266.238,299.656,327.488,351.650,388.687,413.417,450.140,477.988,498.038,533.851,577.810,601.047,607.638,626.238];
