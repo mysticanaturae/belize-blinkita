@@ -42,8 +42,8 @@
 /* BLINKITA Christmas reading season */
 :root{--cs-holiday-red:#9f3735;--cs-holiday-pine:#244d3b}
 .cs-site-header{border-bottom:3px solid transparent;border-image:linear-gradient(90deg,#8d3030,#c7a65e,#315941,#8d3030) 1}
-.cs-button--gold{background:linear-gradient(135deg,#9f3735,#b9473e);border-color:#d4b66f;color:#fff}
-.cs-button--gold:hover{background:#244d3b;color:#fff}
+.cs-button--gold{background:linear-gradient(135deg,#244d3b,#347056);border-color:#c2a05b;color:#fff}
+.cs-button--gold:hover{background:#173b31;color:#fff}
 .cs-hero:after{background-image:url('/assets/blinkita-christmas-garland.svg'),radial-gradient(circle at 15% 34%,rgba(255,246,220,.72) 0 1px,transparent 2px),radial-gradient(circle at 73% 40%,rgba(255,255,255,.58) 0 1px,transparent 2px),radial-gradient(ellipse at 78% 25%,rgba(194,160,91,.15),transparent 36%);background-position:top center,0 0,37px 24px,center;background-size:100% 170px,180px 170px,230px 190px,auto;background-repeat:no-repeat,repeat,repeat,no-repeat;opacity:.95}
 .cs-hero-card{position:relative;border:1px solid rgba(212,182,111,.8)}
 .cs-hero-card:before{content:"";position:absolute;z-index:2;top:-14px;left:-4px;right:-4px;height:54px;background:url('/assets/blinkita-christmas-garland.svg') center top/100% 70px no-repeat;pointer-events:none}
