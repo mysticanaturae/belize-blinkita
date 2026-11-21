@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 220" fill="none">
+<defs>
+ <linearGradient id="pine" x1="0" y1="0" x2="1600" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#173b31"/><stop offset=".5" stop-color="#52705a"/><stop offset="1" stop-color="#173b31"/></linearGradient>
+ <radialGradient id="gold"><stop stop-color="#fff1c4"/><stop offset="1" stop-color="#c39a4e"/></radialGradient>
+</defs>
+<path d="M-30 34C112 46 136 139 288 123S465 18 611 57s171 117 319 94 200-111 350-87 215 97 352 80" stroke="url(#pine)" stroke-width="18" stroke-linecap="round"/>
+<path d="M-30 31C112 43 136 136 288 120S465 15 611 54s171 117 319 94 200-111 350-87 215 97 352 80" stroke="#a9bd91" stroke-opacity=".75" stroke-width="3" stroke-linecap="round"/>
+<g stroke="#6e8a68" stroke-width="5" stroke-linecap="round" opacity=".95">
+<path d="m50 48-30-30m34 35 27-32M125 77l-35-18m37 23 41-11m35 46-39-30m44 35 44-26m42 30-35-37m40 43 47-19m40-9-33-34m39 42 40-20m36 19-22-39m30 44 44-16m45-16-27-38m35 44 45-18m43 19-19-42m27 48 43-20m44-12-25-38m34 44 44-14m40 20-17-42m26 48 41-16m43-3-29-34m37 41 43-20m48 0-21-40m30 46 43-15m42 13-22-39m30 45 42-17m51-9-26-37m35 44 43-18m44 8-18-40m26 46 43-18m47-1-26-36m34 42 44-17m43 13-20-41m28 47 43-17m55-13-29-33m37 40 45-18m48 6-22-39m30 45 45-15m42 8-18-40m26 46 43-16m49-3-28-35m36 42 42-18m51 5-19-39m27 45 43-18m48 1-25-36m33 43 43-17m50 6-20-39m28 45 46-17m50-5-29-33m37 40 44-18m54 10-20-39"/>
+</g>
+<g stroke="#e5c777" stroke-width="3" opacity=".9">
+<path d="M250 119v28m360-87v31m356 58v31m356-98v34m256 66v28"/>
+</g>
+<g>
+<circle cx="250" cy="164" r="17" fill="#a53a35" stroke="url(#gold)" stroke-width="4"/><circle cx="244" cy="158" r="4" fill="#fff5d7" opacity=".85"/>
+<circle cx="610" cy="96" r="14" fill="#c59c4e" stroke="#fff0bd" stroke-width="3"/><circle cx="605" cy="91" r="3" fill="#fff" opacity=".8"/>
+<circle cx="966" cy="194" r="17" fill="#a53a35" stroke="url(#gold)" stroke-width="4"/><circle cx="960" cy="188" r="4" fill="#fff5d7" opacity=".85"/>
+<circle cx="1322" cy="133" r="15" fill="#c59c4e" stroke="#fff0bd" stroke-width="3"/><circle cx="1317" cy="128" r="3" fill="#fff" opacity=".8"/>
+<circle cx="1578" cy="167" r="17" fill="#a53a35" stroke="url(#gold)" stroke-width="4"/>
+</g>
+<g fill="#f6dda1">
+<path d="m390 31 5 12 13 1-10 8 3 13-11-7-11 7 3-13-10-8 13-1z"/>
+<path d="m790 20 4 10 11 1-9 7 3 11-9-6-9 6 2-11-8-7 11-1z"/>
+<path d="m1185 27 5 12 13 1-10 8 3 13-11-7-11 7 3-13-10-8 13-1z"/>
+</g>
+</svg>
