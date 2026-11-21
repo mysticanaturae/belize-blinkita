@@ -68,7 +68,7 @@
 .cs-gift-photo img,.cs-gift-list>img{width:100%;height:auto;max-height:360px;aspect-ratio:auto;object-fit:contain;background:#102a38;padding:5px}
 .cs-reading-card:nth-child(-n+3) img{width:100%;height:auto;max-height:260px;aspect-ratio:auto;object-fit:contain;background:#102a38}
 @media(max-width:760px){
-  .cs-hero:before{background-position:left center}
+  .cs-hero:before{background-position:center center}
   .cs-hero-card img{max-height:160px}
   .cs-gift-photo img,.cs-gift-list>img{max-height:300px}
   .cs-reading-card:nth-child(-n+3) img{max-height:220px}
